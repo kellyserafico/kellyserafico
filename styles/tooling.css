@@ -1,141 +1,136 @@
 #tooling-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #09090C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	/*background-color: #09090c;*/
 }
 
 .window-container {
-    width: 60vw;
-    min-width: 840px;
-    height: 50vh;
-    max-height: 50vh;
-    min-height: 475px;
-    border-radius: 27px;
-    background-color: #262627;
-    /* opacity: .47; */
-    margin: auto;
-    padding: 0px 16px 16px 16px;
-    
+	width: 60vw;
+	min-width: 840px;
+	height: 50vh;
+	max-height: 50vh;
+	min-height: 475px;
+	border-radius: 27px;
+	background-color: #262627;
+	/*opacity: 0.47;*/
+	margin: auto;
+	padding: 0px 16px 16px 16px;
 }
 
-.window-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Center items vertically */
-    height: 50px; /* Adjust height as needed */
+.window-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center; /* Center items vertically */
+	height: 50px; /* Adjust height as needed */
 }
-.window-header p{
-    margin: auto;
+.window-header p {
+	margin: auto;
 }
-.window-buttons{
-    display: flex;
-    width: fit-content;
-    position: absolute;
-    /* margin-left: 10px; */
-    
+.window-buttons {
+	display: flex;
+	width: fit-content;
+	position: absolute;
+	/* margin-left: 10px; */
 }
-.window-button{
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    position:relative;
-
+.window-button {
+	width: 16px;
+	height: 16px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: relative;
 }
 
-.window-button:not(:first-child){
-    margin-left: 8px;
+.window-button:not(:first-child) {
+	margin-left: 8px;
 }
 
-.red{
-    background-color: #875050;
+.red {
+	background-color: #875050;
 }
-.yellow{
-    background-color: #B4BA66
-}
-
-.green{
-    background-color: #65B576
+.yellow {
+	background-color: #b4ba66;
 }
 
-.window-container p{
-    color:white;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    opacity: 1;
+.green {
+	background-color: #65b576;
+}
+
+.window-container p {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	opacity: 1;
 }
 
 .window-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 330px;
-    font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 330px;
+	font-size: 20px;
 }
 
 #type {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Centers the text within its container */
-    letter-spacing: normal; /* Adjust as needed */
-    width: 100%; /* Ensure the content is visible and maintains width */
-    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
-    position: relative;
-    animation-fill-mode: forwards; /* Retain the last keyframe of the animation */
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid white; /* The typewriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Centers the text within its container */
+	letter-spacing: normal; /* Adjust as needed */
+	width: 100%; /* Ensure the content is visible and maintains width */
+	animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+	position: relative;
+	animation-fill-mode: forwards; /* Retain the last keyframe of the animation */
 }
 
-.tools-r1{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+.tools-r1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
 }
-.tools-r2{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+.tools-r2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
 }
 
-.tools-r2 .tool-container{
-    margin-top: 30px;
-
+.tools-r2 .tool-container {
+	margin-top: 30px;
 }
-.tool-container{
-    /* min-width: 10em;
+.tool-container {
+	/* min-width: 10em;
     min-height: 10em; */
-    width: 10em;
-    height: 10em;
-    border-radius: 13px;
-    background-color: rgba(217, 217, 217, .1);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+	width: 10em;
+	height: 10em;
+	border-radius: 13px;
+	background-color: rgba(217, 217, 217, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-.tool-container:not(:first-child){
-    margin-left: 20px;
+.tool-container:not(:first-child) {
+	margin-left: 20px;
 }
 
-.tool-container img{
-    height: 85px;
-    width: 85px;
+.tool-container img {
+	height: 85px;
+	width: 85px;
 }
 
-.tool p{
-    color: black;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    opacity: 1;
-    text-align: center;
-    margin: auto;
+.tool p {
+	color: black;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	opacity: 1;
+	text-align: center;
+	margin: auto;
 }
 /* .tool-container:not(:first-child){
     margin-left: 20px;
 } */
-

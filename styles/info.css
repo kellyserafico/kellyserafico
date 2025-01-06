@@ -1,115 +1,123 @@
-html{
-  /* cursor:url("images/Wii Cursor.svg"), auto; */
-  overflow-x: hidden;
-  /* overflow-y: hidden; */
-  background-color: #09090C;
-  /* padding: 40px; */
-  /* padding-top:0px; */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+html {
+	/* cursor:url("images/Wii Cursor.svg"), auto; */
+	overflow-x: hidden;
+	/* overflow-y: hidden; */
+	/*background-color: #09090c;*/
+	/* padding: 40px; */
+	/* padding-top:0px; */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	background-image: url("../images/portfolio-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
 }
 
 html::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
-body{
-  margin: 0px;
+body {
+	margin: 0px;
+	/*background-image: url("../images/portfolio-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
 }
 
 @font-face {
-    font-family: "RO Spiritendo";
-    src: url("fonts/RoSpritendoSemiboldBeta-vmVwZ.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+	font-family: "RO Spiritendo";
+	src: url("fonts/RoSpritendoSemiboldBeta-vmVwZ.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "FOT-RodinNTLGPro-DB";
-  src: url("fonts/FOT-RodinBokutoh Pro DB.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "FOT-RodinNTLGPro-DB";
+	src: url("fonts/FOT-RodinBokutoh Pro DB.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 a {
-  text-decoration: none;
-  color:white;
+	text-decoration: none;
+	color: white;
 }
 
-nav{
-  display: flex;
-  flex-direction:row;
-  font-family: "museoModerno", sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  color: white;
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
+nav {
+	display: flex;
+	flex-direction: row;
+	font-family: "museoModerno", sans-serif;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	color: white;
+	/* padding-left: 20px; */
+	/* padding-right: 20px; */
 }
-nav h1{
-  font-size: 30px;
-  padding-left: 20px;
+nav h1 {
+	font-size: 30px;
+	padding-left: 20px;
 }
-nav div{
-  display:flex;
-  flex-direction:row;
-  padding-right: 20px;
-  position:relative;
-  left: 40px;
+nav div {
+	display: flex;
+	flex-direction: row;
+	padding-right: 20px;
+	position: relative;
+	left: 40px;
 }
-nav div a{
-  padding-right: 60px;
-  font-size: 20px;
+nav div a {
+	padding-right: 60px;
+	font-size: 20px;
 }
 
-.info-section{
-  width:100vw;
-  height:100vh;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  /* width: 100%;
+.info-section {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* width: 100%;
   height: 100%; */
 }
-.info-text{
-  color: white;
-  font-family: "museoModerno", sans-serif;
-  width: 40%;
-  position:relative;
-  top: 300px;
-  padding-left: 60px;
-  padding-right: 60px;
+.info-text {
+	color: white;
+	font-family: "museoModerno", sans-serif;
+	width: 40%;
+	position: relative;
+	top: 300px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
-.info-text h3{
-  margin-bottom: 80px;
-  font-size: 30px;
+.info-text h3 {
+	margin-bottom: 80px;
+	font-size: 30px;
 }
-.info-text p{
-  font-size: 20px;
-  margin-bottom: 150px;
-  opacity: 0.65;
+.info-text p {
+	font-size: 20px;
+	margin-bottom: 150px;
+	opacity: 0.65;
 }
 
-.avatar{
-  margin: auto;
+.moon {
+	margin: auto;
 }
-.email-section{
-  display:flex;
-  flex-direction:row;
-  color:white;
+.email-section {
+	display: flex;
+	flex-direction: row;
+	color: white;
 }
-.email-section img{
-  padding-right: 15px;
+.email-section img {
+	padding-right: 15px;
 }
 
 .arrow-down {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-  right: 0;
-  animation: bob 2s infinite;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	animation: bob 2s infinite;
 }
