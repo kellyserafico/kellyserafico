@@ -93,7 +93,16 @@ nav div a {
 
 .moon {
 	margin: auto;
+	/*width: 50%;*/
 }
+
+#cloud1 {
+	position: absolute;
+}
+#cloud2 {
+	position: absolute;
+}
+
 .email-section {
 	display: flex;
 	flex-direction: row;
