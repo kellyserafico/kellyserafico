@@ -121,3 +121,145 @@ nav div a {
 	right: 0;
 	animation: bob 2s infinite;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+	.info-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.info-text {
+		width: 90%;
+		top: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 40px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transform: translateY(-130px);
+	}
+
+	.email-section {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.info-text h3 {
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+
+	.info-text p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.moon {
+		margin: 0;
+		order: -1; /* This puts the moon on top */
+		margin-bottom: 20px;
+		transform: translateY(-100px);
+	}
+
+	.moon img {
+		max-width: 200px;
+		height: auto;
+	}
+
+	/* Adjust navigation for mobile */
+	nav {
+		flex-direction: column;
+		padding: 20px;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	nav h1 {
+		padding-left: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	nav div {
+		padding-right: 0;
+		left: 0;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+	nav div a {
+		padding-right: 30px;
+		padding-left: 30px;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	/* Adjust arrow for mobile */
+	.arrow-down {
+		bottom: 20px;
+		width: 35px;
+		height: auto;
+	}
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+	.info-text {
+		width: 95%;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transform: translateY(-20px);
+	}
+
+	.email-section {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.info-text h3 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.info-text p {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	.moon img {
+		max-width: 150px;
+	}
+
+	nav div a {
+		padding-right: 20px;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+
+	/* Adjust arrow for very small screens */
+	.arrow-down {
+		bottom: 15px;
+		width: 30px;
+		height: auto;
+	}
+}
