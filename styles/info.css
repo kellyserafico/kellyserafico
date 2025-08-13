@@ -101,6 +101,102 @@ nav div a {
 
 .moon {
 	margin: auto;
+	position: relative;
+}
+
+#moon {
+	z-index: 10;
+}
+
+#cloud1 {
+	position: absolute;
+	top: 80px;
+	right: -60px;
+	z-index: 0;
+	animation: float1 6s ease-in-out infinite;
+}
+
+#cloud2 {
+	position: absolute;
+	top: 200px;
+	left: -30px;
+	z-index: 0;
+	animation: float2 8s ease-in-out infinite;
+}
+
+#cloud3 {
+	position: absolute;
+	top: 300px;
+	right: -80px;
+	z-index: 0;
+	animation: float3 7s ease-in-out infinite;
+}
+
+#cloud4 {
+	position: absolute;
+	top: 500px;
+	left: 30px;
+	z-index: 0;
+	animation: float4 9s ease-in-out infinite;
+}
+
+#cloud5 {
+	position: absolute;
+	top: 600px;
+	right: -100px;
+	z-index: 0;
+	animation: float5 5s ease-in-out infinite;
+}
+
+/* Cloud floating animations */
+@keyframes float1 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-15px) translateX(10px);
+	}
+}
+
+@keyframes float2 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-20px) translateX(-15px);
+	}
+}
+
+@keyframes float3 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-12px) translateX(8px);
+	}
+}
+
+@keyframes float4 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-18px) translateX(-12px);
+	}
+}
+
+@keyframes float5 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-10px) translateX(5px);
+	}
 }
 .email-section {
 	display: flex;
@@ -173,6 +269,98 @@ nav div a {
 	.moon img {
 		max-width: 200px;
 		height: auto;
+	}
+
+	/* Adjust cloud positions and sizes for mobile */
+	#cloud1 {
+		top: 10px;
+		right: -15px;
+		max-width: 80px;
+		height: auto;
+		animation: float1-mobile 6s ease-in-out infinite;
+	}
+
+	#cloud2 {
+		top: 35px;
+		left: -8px;
+		max-width: 80px;
+		height: auto;
+		animation: float2-mobile 8s ease-in-out infinite;
+	}
+
+	#cloud3 {
+		top: 60px;
+		right: -20px;
+		max-width: 80px;
+		height: auto;
+		animation: float3-mobile 7s ease-in-out infinite;
+	}
+
+	#cloud4 {
+		top: 85px;
+		left: 8px;
+		max-width: 80px;
+		height: auto;
+		animation: float4-mobile 9s ease-in-out infinite;
+	}
+
+	#cloud5 {
+		top: 110px;
+		right: -25px;
+		max-width: 80px;
+		height: auto;
+		animation: float5-mobile 5s ease-in-out infinite;
+	}
+
+	/* Mobile cloud floating animations (smaller movements) */
+	@keyframes float1-mobile {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-8px) translateX(5px);
+		}
+	}
+
+	@keyframes float2-mobile {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-10px) translateX(-8px);
+		}
+	}
+
+	@keyframes float3-mobile {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-6px) translateX(4px);
+		}
+	}
+
+	@keyframes float4-mobile {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-9px) translateX(-6px);
+		}
+	}
+
+	@keyframes float5-mobile {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-5px) translateX(3px);
+		}
 	}
 
 	/* Adjust navigation for mobile */
@@ -248,6 +436,98 @@ nav div a {
 
 	.moon img {
 		max-width: 150px;
+	}
+
+	/* Adjust cloud positions and sizes for very small screens */
+	#cloud1 {
+		top: 8px;
+		right: -12px;
+		max-width: 60px;
+		height: auto;
+		animation: float1-small 6s ease-in-out infinite;
+	}
+
+	#cloud2 {
+		top: 28px;
+		left: -6px;
+		max-width: 60px;
+		height: auto;
+		animation: float2-small 8s ease-in-out infinite;
+	}
+
+	#cloud3 {
+		top: 48px;
+		right: -15px;
+		max-width: 60px;
+		height: auto;
+		animation: float3-small 7s ease-in-out infinite;
+	}
+
+	#cloud4 {
+		top: 68px;
+		left: 6px;
+		max-width: 60px;
+		height: auto;
+		animation: float4-small 9s ease-in-out infinite;
+	}
+
+	#cloud5 {
+		top: 88px;
+		right: -18px;
+		max-width: 60px;
+		height: auto;
+		animation: float5-small 5s ease-in-out infinite;
+	}
+
+	/* Very small screen cloud floating animations (minimal movements) */
+	@keyframes float1-small {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-5px) translateX(3px);
+		}
+	}
+
+	@keyframes float2-small {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-6px) translateX(-4px);
+		}
+	}
+
+	@keyframes float3-small {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-4px) translateX(2px);
+		}
+	}
+
+	@keyframes float4-small {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-5px) translateX(-3px);
+		}
+	}
+
+	@keyframes float5-small {
+		0%,
+		100% {
+			transform: translateY(0px) translateX(0px);
+		}
+		50% {
+			transform: translateY(-3px) translateX(2px);
+		}
 	}
 
 	nav div a {

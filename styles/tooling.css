@@ -77,12 +77,13 @@
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: 0.15em solid white; /* The typewriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Centers the text within its container */
+	margin: 0; /* Remove auto margin to prevent centering issues */
 	letter-spacing: normal; /* Adjust as needed */
-	width: 100%; /* Ensure the content is visible and maintains width */
+	width: 0; /* Start with 0 width */
 	animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 	position: relative;
 	animation-fill-mode: forwards; /* Retain the last keyframe of the animation */
+	display: inline-block; /* Ensures the element only takes up the space it needs */
 }
 
 .tools-r1 {
@@ -134,3 +135,59 @@
 /* .tool-container:not(:first-child){
     margin-left: 20px;
 } */
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+	.window-container {
+		width: 95vw;
+		min-width: unset;
+		height: auto;
+		min-height: 400px;
+		padding: 0px 10px 10px 10px;
+	}
+
+	.window-text {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.tool-container {
+		width: 7em;
+		height: 7em;
+	}
+
+	.tool-container img {
+		height: 50px;
+		width: 50px;
+	}
+
+	.tool-container p {
+		font-size: 12px;
+	}
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+	.window-container {
+		width: 98vw;
+		padding: 0px 5px 5px 5px;
+	}
+
+	.window-text {
+		font-size: 14px;
+	}
+
+	.tool-container {
+		width: 5em;
+		height: 5em;
+	}
+
+	.tool-container img {
+		height: 35px;
+		width: 35px;
+	}
+
+	.tool-container p {
+		font-size: 10px;
+	}
+}
