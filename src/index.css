@@ -1,0 +1,119 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	background-image: url("/images/portfolio-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Custom font faces */
+@font-face {
+	font-family: "RO Spiritendo";
+	src: url("/fonts/RoSpritendoSemiboldBeta-vmVwZ.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FOT-RodinNTLGPro-DB";
+	src: url("/fonts/FOT-RodinBokutoh Pro DB.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Animations */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	}
+}
+
+@keyframes bob {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes float1 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-15px) translateX(10px);
+	}
+}
+
+@keyframes float2 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-20px) translateX(-15px);
+	}
+}
+
+@keyframes float3 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-12px) translateX(8px);
+	}
+}
+
+@keyframes float4 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-18px) translateX(-12px);
+	}
+}
+
+@keyframes float5 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px);
+	}
+	50% {
+		transform: translateY(-10px) translateX(5px);
+	}
+}
