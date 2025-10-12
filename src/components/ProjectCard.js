@@ -1,10 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const ProjectCard = ({ project, onProjectClick, onGithubClick }) => {
+const ProjectCard = ({ project }) => {
+	const navigate = useNavigate();
+
+	const handleImageClick = (e) => {
+		e.stopPropagation();
+		if (project.websiteUrl) {
+			window.open(project.websiteUrl, "_blank");
+		}
+	};
+
+	const handleCardClick = () => {
+		navigate(`/case-study/${project.id}`);
+	};
+
 	return (
-		<div key={project.id} className="project" id={project.id}>
-			<img src={project.image} className="project-image" alt={project.title} />
+		<div key={project.id} className="project" id={project.id} onClick={handleCardClick}>
+			<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
 			<div className="project-content">
 				<div className="header">
 					<p className="project-title">{project.title}</p>
@@ -18,47 +31,22 @@ const ProjectCard = ({ project, onProjectClick, onGithubClick }) => {
 						</React.Fragment>
 					))}
 				</p>
-				<div className="tools">
-					{project.tools.map((tool, index) => (
-						<div key={index} className="tool">
-							{tool}
-						</div>
-					))}
-				</div>
-				<div className="achievements">
-					{project.achievements.map((achievement, index) => (
-						<div key={index} className="achievement">
-							<img src="/images/check.svg" alt="Check" />
-							<p>{achievement}</p>
-						</div>
-					))}
-				</div>
-				<div className="project-actions">
-					<Link to={`/case-study/${project.id}`} className="case-study-link">
-						View Case Study
-					</Link>
-					{project.websiteUrl && (
-						<a
-							href={project.websiteUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="website-link"
-							onClick={(e) => e.stopPropagation()}
-						>
-							Visit Site
-						</a>
-					)}
-					{project.githubUrl && (
-						<a
-							href={project.githubUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="github-link"
-							onClick={(e) => e.stopPropagation()}
-						>
-							GitHub
-						</a>
-					)}
+				<div className="project-bottom">
+					<div className="tools">
+						{project.tools.map((tool, index) => (
+							<div key={index} className="tool">
+								{tool}
+							</div>
+						))}
+					</div>
+					<div className="achievements">
+						{project.achievements.map((achievement, index) => (
+							<div key={index} className="achievement">
+								<img src="/images/check.svg" alt="Check" />
+								<p>{achievement}</p>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

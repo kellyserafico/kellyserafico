@@ -24,10 +24,10 @@ const Hero = () => {
 					<img src="/images/cloud/mooncloud4.svg" id="cloud4" alt="Cloud 4" />
 					<img src="/images/cloud/mooncloud5.svg" id="cloud5" alt="Cloud 5" />
 				</section>
+				<a href="#tooling-section">
+					<img src="/images/arrow_down.svg" className="arrow-down" alt="Scroll down" />
+				</a>
 			</section>
-			<a href="#tooling-section">
-				<img src="/images/arrow_down.svg" className="arrow-down" alt="Scroll down" />
-			</a>
 		</>
 	);
 };
