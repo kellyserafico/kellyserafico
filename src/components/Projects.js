@@ -24,7 +24,7 @@ const Projects = () => {
 			<div className="projects-header">
 				<h2>Projects</h2>
 			</div>
-			<div className="projects">
+			<div className="projects-grid">
 				{sortedProjects.map((project) => (
 					<ProjectCard key={project.id} project={project} onProjectClick={handleProjectClick} onGithubClick={handleGithubClick} />
 				))}

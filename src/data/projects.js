@@ -5,8 +5,7 @@ export const projects = [
 		title: "Valdle",
 		role: "Spring 2023",
 		tools: ["HTML", "CSS", "JAVASCRIPT", "JQUERY", "PYTHON"],
-		description:
-			"Trivia website featuring various game modes that aim to challenge players' knowledge of Riot's game Valorant",
+		description: "Trivia website featuring various game modes that aim to challenge players' knowledge of Riot's game Valorant",
 		achievements: [
 			"Drove a project website to 410k+ views and 24k+ unique users in 3 months",
 			"Led a multifunctional team, resulting in 40% increase in user engagement",
@@ -37,8 +36,7 @@ export const projects = [
 		title: "MemoTrail",
 		role: "Spring 2024",
 		tools: ["REACT", "TAILWINDCSS", "PYTHON", "FLASK", "POSTGRES", "A-FRAME"],
-		description:
-			"Mobile app using that uses augmented reality to overlay digital messages onto real-world locations",
+		description: "Mobile app using that uses augmented reality to overlay digital messages onto real-world locations",
 		achievements: [
 			"Successfully designed and implemented a mobile-first web app that uses AR",
 			'Submitted to LA Hacks under the "Touch Grass" category',
@@ -71,8 +69,7 @@ export const projects = [
 		title: "Lucidia",
 		role: "Spring 2024",
 		tools: ["FIGMA", "REACT NATIVE", "USER RESEARCH", "USABILITY TESTING"],
-		description:
-			"Mobile journaling app designed to make dream journaling effortless and emotionally reflective.",
+		description: "Mobile journaling app designed to make dream journaling effortless and emotionally reflective.",
 		achievements: [
 			"Collaborated in a 5-person team to design and implement a functional prototype with React Native and Figma",
 			"Improved usability through multiple testing rounds, addressing navigation issues, color contrast, and entry flows",
@@ -105,14 +102,13 @@ export const projects = [
 		title: "Min Lee Party Game",
 		role: "Summer 2024",
 		tools: ["COLYSEUS", "REACT", "TAILWINDCSS", "TYPESCRIPT", "NODE.JS", "VITE", "FIGMA", "VERCEL"],
-		description:
-			"Multiplayer party game inspired by Jackbox, designed to deliver seamless real-time gameplay across devices.",
+		description: "Multiplayer party game inspired by Jackbox, designed to deliver seamless real-time gameplay across devices.",
 		achievements: [
 			"Developed a full-stack multiplayer party game with real-time gameplay using Colyseus, React, Tailwind, and TypeScript",
 			"Designed and prototyped interactive mini-games, lobby systems, and player flows in Figma for a polished user experience",
 			"Built and deployed full-stack features with Node.js, Vite, and Vercel, including live player interactions, room codes, and voting mechanics",
 		],
-		image: "/images/minlee-party.png", // replace with actual thumbnail if available
+		image: "/images/minlee.png", // replace with actual thumbnail if available
 		websiteUrl: "", // add deployment or demo link if available
 		githubUrl: "", // add GitHub repo if available
 		featured: true,
@@ -152,8 +148,7 @@ export const projects = [
 		title: "ICS Search Engine",
 		role: "Winter 2024",
 		tools: ["PYTHON", "TF-IDF", "NLP", "HTML PARSING"],
-		description:
-			"The ICS Search Engine is a custom-built search platform for UCI’s ICS department, featuring query stemming, TF-IDF ranking, and a self-developed web crawler. The project focuses on efficient information retrieval, natural language query processing, and scalable data indexing for course and research page discovery.",
+		description: "Custom-built search platform for UCI’s Information and Computer Sciences department.",
 		achievements: [
 			"Implemented a full-text search pipeline using TF-IDF weighting and query stemming for accurate relevance ranking",
 			"Developed a custom crawler to index UCI ICS web pages and extract course, faculty, and research data",
@@ -169,8 +164,7 @@ export const projects = [
 		title: "License Link",
 		role: "Spring 2025",
 		tools: ["REACT", "MATERIAL UI", "NODE.JS", "EXPRESS", "POSTGRESQL", "TYPEDI", "TYPEORM", "AZURE", "DOCKER COMPOSE"],
-		description:
-			"Web-based self-licensing and publishing platform for musical theatre creators and producers.",
+		description: "Web-based self-licensing and publishing platform for musical theatre creators and producers.",
 		achievements: [
 			"Developed frontend interfaces using React and Material UI, ensuring a polished and intuitive user experience for creators and producers",
 			"Implemented backend architecture with Express, TypeORM, and PostgreSQL to support scalable content management",

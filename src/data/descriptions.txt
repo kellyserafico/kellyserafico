@@ -16,6 +16,6 @@
 
 "Sonder is a mobile app designed to create a meaningful space for mental health reflection and connection in a fast-paced world. Each day, Sonder sends a single random prompt to all users at the same time, encouraging mindful journaling and authentic community moments. Built with FastAPI and PostgreSQL on the backend and React Native on the frontend, Sonder focuses on privacy, empathy, and real-time engagement — helping users slow down and see one another a little more clearly.",
 
-
+	"The ICS Search Engine is a custom-built search platform for UCI’s ICS department, featuring query stemming, TF-IDF ranking, and a self-developed web crawler. The project focuses on efficient information retrieval, natural language query processing, and scalable data indexing for course and research page discovery.",
 
 	"License Link is a web-based self-licensing and publishing platform for musical theatre creators and producers. It empowers artists to independently manage and distribute their works while maintaining full control over licensing, marketing, and audience engagement. Built with scalability and accessibility in mind, the platform integrates a robust search and filtering system to help users discover, publish, and license productions efficiently.",

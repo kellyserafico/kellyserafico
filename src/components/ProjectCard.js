@@ -3,23 +3,10 @@ import React from "react";
 const ProjectCard = ({ project, onProjectClick, onGithubClick }) => {
 	return (
 		<div key={project.id} className="project" id={project.id} onClick={() => onProjectClick(project.websiteUrl)}>
-			<div className="project-text">
+			<img src={project.image} className="project-image" alt={project.title} />
+			<div className="project-content">
 				<div className="header">
 					<p className="project-title">{project.title}</p>
-					<img
-						src="/images/github-logo.png"
-						onClick={(e) => onGithubClick(project.githubUrl, e)}
-						className="github"
-						alt="GitHub"
-					/>
-				</div>
-				<p className="role">{project.role}</p>
-				<div className="tools">
-					{project.tools.map((tool, index) => (
-						<div key={index} className="tool">
-							{tool}
-						</div>
-					))}
 				</div>
 				<p className="project-description">
 					{project.description.split("\n").map((line, index) => (
@@ -30,6 +17,13 @@ const ProjectCard = ({ project, onProjectClick, onGithubClick }) => {
 						</React.Fragment>
 					))}
 				</p>
+				<div className="tools">
+					{project.tools.map((tool, index) => (
+						<div key={index} className="tool">
+							{tool}
+						</div>
+					))}
+				</div>
 				<div className="achievements">
 					{project.achievements.map((achievement, index) => (
 						<div key={index} className="achievement">
@@ -39,7 +33,6 @@ const ProjectCard = ({ project, onProjectClick, onGithubClick }) => {
 					))}
 				</div>
 			</div>
-			<img src={project.image} className="project-image" alt={project.title} />
 		</div>
 	);
 };
