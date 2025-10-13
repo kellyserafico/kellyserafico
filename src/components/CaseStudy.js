@@ -2,13 +2,30 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
 import { valdleCaseStudy } from "../data/valdle-case-study";
+import { dauCaseStudy } from "../data/dau-case-study";
+import { memotrailCaseStudy } from "../data/memotrail-case-study";
+import { bookitCaseStudy } from "../data/bookit-case-study";
+import { dinesafeCaseStudy } from "../data/dinesafe-case-study";
+import { sonderCaseStudy } from "../data/sonder-case-study";
 
 const CaseStudy = () => {
 	const { projectId } = useParams();
 	const project = projects.find((p) => p.id === projectId);
 
 	// Get detailed case study data if available
-	const detailedCaseStudy = projectId === "valdle" ? valdleCaseStudy : null;
+	const getDetailedCaseStudy = (id) => {
+		const caseStudies = {
+			valdle: valdleCaseStudy,
+			dau: dauCaseStudy,
+			memotrail: memotrailCaseStudy,
+			bookit: bookitCaseStudy,
+			dinesafe: dinesafeCaseStudy,
+			sonder: sonderCaseStudy,
+		};
+		return caseStudies[id] || null;
+	};
+
+	const detailedCaseStudy = getDetailedCaseStudy(projectId);
 
 	if (!project) {
 		return (
@@ -92,6 +109,50 @@ const CaseStudy = () => {
 
 				{detailedCaseStudy && (
 					<>
+						{/* Demo Video Section */}
+						{detailedCaseStudy.links?.demoVideo && (
+							<div className="case-study-demo">
+								<h2>Demo Video</h2>
+								<div className="demo-video-container">
+									<iframe
+										src={detailedCaseStudy.links.demoVideo}
+										title={`${detailedCaseStudy.title} Demo Video`}
+										className="demo-video"
+										allowFullScreen
+									></iframe>
+								</div>
+							</div>
+						)}
+
+						{/* User Insights Section */}
+						{detailedCaseStudy.insights && (
+							<div className="case-study-insights">
+								<h2>User Research Insights</h2>
+								{detailedCaseStudy.insights.userStats && (
+									<div className="insights-section">
+										<h3>Key Statistics</h3>
+										<ul className="stats-list">
+											{detailedCaseStudy.insights.userStats.map((stat, index) => (
+												<li key={index} className="stat-item">
+													{stat}
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+								{detailedCaseStudy.insights.usabilityFindings && (
+									<div className="insights-section">
+										<h3>Usability Findings</h3>
+										<ul>
+											{detailedCaseStudy.insights.usabilityFindings.map((finding, index) => (
+												<li key={index}>{finding}</li>
+											))}
+										</ul>
+									</div>
+								)}
+							</div>
+						)}
+
 						<div className="case-study-process">
 							<h2>Development Process</h2>
 							<div className="process-section">
@@ -110,14 +171,26 @@ const CaseStudy = () => {
 									))}
 								</ul>
 							</div>
-							<div className="process-section">
-								<h3>Development</h3>
-								<ul>
-									{detailedCaseStudy.process.development.map((item, index) => (
-										<li key={index}>{item}</li>
-									))}
-								</ul>
-							</div>
+							{detailedCaseStudy.process.testing && (
+								<div className="process-section">
+									<h3>Testing & Iteration</h3>
+									<ul>
+										{detailedCaseStudy.process.testing.map((item, index) => (
+											<li key={index}>{item}</li>
+										))}
+									</ul>
+								</div>
+							)}
+							{detailedCaseStudy.process.development && (
+								<div className="process-section">
+									<h3>Development</h3>
+									<ul>
+										{detailedCaseStudy.process.development.map((item, index) => (
+											<li key={index}>{item}</li>
+										))}
+									</ul>
+								</div>
+							)}
 						</div>
 
 						<div className="case-study-challenges">

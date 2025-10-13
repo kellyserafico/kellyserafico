@@ -72,27 +72,23 @@ body {
 	position: relative;
 }
 
-.nav div a.active span::after {
+.nav div a span::after {
 	content: "";
 	position: absolute;
 	bottom: -5px;
 	left: 0;
-	width: 100%;
+	width: 0;
 	height: 3px;
 	background-color: #e9bd98;
 	border-radius: 2px;
-	animation: slideIn 0.3s ease-in-out;
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	transform: scaleX(0);
+	transform-origin: left;
 }
 
-@keyframes slideIn {
-	from {
-		width: 0;
-		left: 50%;
-	}
-	to {
-		width: 100%;
-		left: 0;
-	}
+.nav div a.active span::after {
+	transform: scaleX(1);
+	width: 100%;
 }
 
 /* Hero Section */
@@ -1073,10 +1069,8 @@ body {
 
 .case-study-hero-image {
 	width: 400px;
-	height: 300px;
-	object-fit: cover;
+	height: auto;
 	border-radius: 20px;
-	border: 2px solid #818181;
 }
 
 .case-study-title-section {
@@ -1354,5 +1348,105 @@ body {
 	.impact-stats {
 		grid-template-columns: 1fr;
 		gap: 20px;
+	}
+}
+
+/* Enhanced Case Study Styles */
+.case-study-demo {
+	margin: 40px 0;
+}
+
+.case-study-demo h2 {
+	color: #e9bd98;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.demo-video-container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.demo-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 15px;
+}
+
+.case-study-insights {
+	margin: 40px 0;
+	background: rgba(255, 255, 255, 0.05);
+	padding: 30px;
+	border-radius: 15px;
+	backdrop-filter: blur(10px);
+}
+
+.case-study-insights h2 {
+	color: #e9bd98;
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+
+.insights-section {
+	margin-bottom: 30px;
+}
+
+.insights-section h3 {
+	color: #ffffff;
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+
+.stats-list {
+	list-style: none;
+	padding: 0;
+}
+
+.stat-item {
+	background: rgba(233, 189, 152, 0.1);
+	padding: 15px 20px;
+	margin: 10px 0;
+	border-radius: 10px;
+	border-left: 4px solid #e9bd98;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+
+.insights-section ul {
+	padding-left: 20px;
+}
+
+.insights-section li {
+	margin: 10px 0;
+	line-height: 1.6;
+}
+
+/* Mobile responsive for enhanced case study */
+@media (max-width: 768px) {
+	.case-study-demo h2 {
+		font-size: 1.5em;
+	}
+
+	.case-study-insights {
+		padding: 20px;
+		margin: 20px 0;
+	}
+
+	.case-study-insights h2 {
+		font-size: 1.5em;
+	}
+
+	.stat-item {
+		padding: 12px 15px;
+		font-size: 1em;
 	}
 }
