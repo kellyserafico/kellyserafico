@@ -16,6 +16,19 @@ export const projects = [
 		featured: true, // Featured projects appear first
 	},
 	{
+		id: "artr",
+		title: "Artr",
+		role: "Winter 2025",
+		tools: ["REACT", "NEXT.JS", "TAILWINDCSS"],
+		description:
+			"A secure, business-friendly, and dynamic global marketplace connecting anime, gaming, and fandom creators with passionate fans.",
+		achievements: [],
+		image: "/images/artr.png", // replace with actual thumbnail if available
+		websiteUrl: "", // add live demo or staging link if available
+		githubUrl: "", // add repo link if appropriate
+		featured: true,
+	},
+	{
 		id: "dau",
 		title: "Design@UCR",
 		role: "Summer 2024",
@@ -114,19 +127,6 @@ export const projects = [
 		featured: true,
 	},
 	{
-		id: "artr",
-		title: "Artr",
-		role: "Winter 2025",
-		tools: ["REACT", "NEXT.JS", "TAILWINDCSS"],
-		description:
-			"A secure, business-friendly, and dynamic global marketplace connecting anime, gaming, and fandom creators with passionate fans.",
-		achievements: [],
-		image: "/images/artr.png", // replace with actual thumbnail if available
-		websiteUrl: "", // add live demo or staging link if available
-		githubUrl: "", // add repo link if appropriate
-		featured: true,
-	},
-	{
 		id: "sonder",
 		title: "Sonder",
 		role: "Fall 2024",
@@ -142,22 +142,6 @@ export const projects = [
 		websiteUrl: "", // add live demo or Devpost link if available
 		githubUrl: "", // add GitHub repo link if applicable
 		featured: true,
-	},
-	{
-		id: "ics-search",
-		title: "ICS Search Engine",
-		role: "Winter 2024",
-		tools: ["PYTHON", "TF-IDF", "NLP", "HTML PARSING"],
-		description: "Custom-built search platform for UCI’s Information and Computer Sciences department.",
-		achievements: [
-			"Implemented a full-text search pipeline using TF-IDF weighting and query stemming for accurate relevance ranking",
-			"Developed a custom crawler to index UCI ICS web pages and extract course, faculty, and research data",
-			"Optimized query processing and indexing efficiency to handle large document sets within minimal runtime",
-		],
-		image: "/images/ics-search.png", // replace with actual thumbnail if available
-		websiteUrl: "", // add demo or hosted version if available
-		githubUrl: "", // add repo link if applicable
-		featured: false,
 	},
 	{
 		id: "license-link",

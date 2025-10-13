@@ -587,6 +587,76 @@ body {
 	color: #1f2937;
 }
 
+#artr .role {
+	color: #d8b4fe;
+}
+
+#artr .tool,
+#artr .achievement {
+	background-color: #d8b4fe;
+	color: #1f2937;
+}
+
+#lucidia .role {
+	color: #fbb6ce;
+}
+
+#lucidia .tool,
+#lucidia .achievement {
+	background-color: #fbb6ce;
+	color: #1f2937;
+}
+
+#dinesafe .role {
+	color: #86efac;
+}
+
+#dinesafe .tool,
+#dinesafe .achievement {
+	background-color: #86efac;
+	color: #1f2937;
+}
+
+#minlee-party .role {
+	color: #fde68a;
+}
+
+#minlee-party .tool,
+#minlee-party .achievement {
+	background-color: #fde68a;
+	color: #1f2937;
+}
+
+#sonder .role {
+	color: #a5f3fc;
+}
+
+#sonder .tool,
+#sonder .achievement {
+	background-color: #a5f3fc;
+	color: #1f2937;
+}
+
+#ics-search .role {
+	color: #c7d2fe;
+}
+
+#ics-search .tool,
+#ics-search .achievement {
+	background-color: #c7d2fe;
+	color: #1f2937;
+}
+
+#license-link .role {
+	color: #fecaca;
+}
+
+#license-link .tool,
+#license-link .achievement {
+	background-color: #fecaca;
+	color: #1f2937;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
 	.moon {
