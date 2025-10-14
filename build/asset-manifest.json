@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc4b0ff3.css",
-    "main.js": "/static/js/main.c9bc9bf8.js",
-    "static/media/FOT-RodinBokutoh Pro DB.otf": "/static/media/FOT-RodinBokutoh Pro DB.e86d1e539034a3784834.otf",
-    "static/media/portfolio-bg.png": "/static/media/portfolio-bg.7ba1edd6ee38386f2fa7.png",
-    "static/media/RoSpritendoSemiboldBeta-vmVwZ.otf": "/static/media/RoSpritendoSemiboldBeta-vmVwZ.c7714066bfb699fbc0db.otf",
-    "index.html": "/index.html",
-    "main.dc4b0ff3.css.map": "/static/css/main.dc4b0ff3.css.map",
-    "main.c9bc9bf8.js.map": "/static/js/main.c9bc9bf8.js.map"
+    "main.css": "/kellyserafico/static/css/main.9209627f.css",
+    "main.js": "/kellyserafico/static/js/main.0d5aee8b.js",
+    "static/media/FOT-RodinBokutoh Pro DB.otf": "/kellyserafico/static/media/FOT-RodinBokutoh Pro DB.e86d1e539034a3784834.otf",
+    "static/media/portfolio-bg.png": "/kellyserafico/static/media/portfolio-bg.ba789ff63094e39880b2.png",
+    "static/media/RoSpritendoSemiboldBeta-vmVwZ.otf": "/kellyserafico/static/media/RoSpritendoSemiboldBeta-vmVwZ.c7714066bfb699fbc0db.otf",
+    "index.html": "/kellyserafico/index.html",
+    "main.9209627f.css.map": "/kellyserafico/static/css/main.9209627f.css.map",
+    "main.0d5aee8b.js.map": "/kellyserafico/static/js/main.0d5aee8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc4b0ff3.css",
-    "static/js/main.c9bc9bf8.js"
+    "static/css/main.9209627f.css",
+    "static/js/main.0d5aee8b.js"
   ]
 }

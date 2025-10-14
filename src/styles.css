@@ -368,6 +368,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
+	overflow: visible;
 }
 
 .projects p {
@@ -412,12 +413,14 @@ body {
 	position: relative;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .project:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-	height: 500px;
+	height: auto;
+	min-height: 500px;
 	z-index: 10;
 }
 
@@ -513,11 +516,13 @@ body {
 	overflow: hidden;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
+	width: 100%;
 }
 
 .project:hover .achievements {
-	max-height: 200px;
+	max-height: 300px;
 	opacity: 1;
+	overflow-y: auto;
 }
 
 .achievement {
@@ -1027,10 +1032,12 @@ body {
 		width: 100%;
 		padding: 10px;
 		height: 250px;
+		overflow: hidden;
 	}
 
 	.project:hover {
-		height: 350px;
+		height: auto;
+		min-height: 350px;
 	}
 
 	.project-title {
