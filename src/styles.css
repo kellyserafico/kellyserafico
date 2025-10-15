@@ -1146,9 +1146,10 @@ body {
 }
 
 .case-study-hero-image {
-	width: 400px;
+	width: 600px;
 	height: auto;
 	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .case-study-title-section {
@@ -1399,7 +1400,8 @@ body {
 
 	.case-study-hero-image {
 		width: 100%;
-		height: 200px;
+		height: 300px;
+		object-fit: cover;
 	}
 
 	.case-study-title {
