@@ -17,11 +17,11 @@ const ProjectCard = ({ project }) => {
 
 	return (
 		<div key={project.id} className="project" id={project.id} onClick={handleCardClick}>
-			<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
 			<div className="project-content">
 				<div className="header">
 					<p className="project-title">{project.title}</p>
 				</div>
+				<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
 				<p className="project-description">
 					{project.description.split("\n").map((line, index) => (
 						<React.Fragment key={index}>
