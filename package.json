@@ -2,7 +2,7 @@
 	"name": "kelly-serafico-portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://kellyserafico.github.io/kellyserafico",
+	"homepage": "https://kellyserafico.github.io",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.4",
 		"@testing-library/react": "^13.3.0",
@@ -23,7 +23,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "npx gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [

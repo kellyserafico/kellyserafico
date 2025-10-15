@@ -1527,3 +1527,206 @@ body {
 		font-size: 1em;
 	}
 }
+
+/* Contact Section */
+.contact-section {
+	background-color: #000;
+	color: white;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.contact-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.contact-info {
+	background-color: #1a1a1a;
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	border: 1px solid #333;
+}
+
+.contact-info p {
+	margin: 8px 0;
+	color: #ccc;
+	font-size: 1.1em;
+}
+
+.contact-info strong {
+	color: white;
+}
+
+.contact-form {
+	max-width: 600px;
+	margin: 0 auto 40px auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 15px;
+	border: 2px solid #333;
+	border-radius: 8px;
+	background-color: #1a1a1a;
+	color: white;
+	font-size: 16px;
+	font-family: inherit;
+	transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: #555;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+	color: #888;
+}
+
+.submit-btn {
+	background-color: #333;
+	color: white;
+	padding: 15px 30px;
+	border: 2px solid #555;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.submit-btn:hover {
+	background-color: #555;
+	border-color: #777;
+	transform: translateY(-2px);
+}
+
+.contact-section h2 {
+	font-family: "museoModerno", sans-serif;
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.contact-section p {
+	font-size: 1.2em;
+	margin-bottom: 40px;
+	color: #ccc;
+	line-height: 1.6;
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.contact-link {
+	display: inline-block;
+	padding: 15px 30px;
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	border: 2px solid transparent;
+}
+
+.contact-link.github-link {
+	background-color: transparent;
+	padding: 10px;
+	border: none;
+}
+
+.contact-link.github-link:hover {
+	background-color: transparent;
+	transform: scale(1.1);
+}
+
+.contact-link:hover {
+	background-color: #555;
+	border-color: #777;
+	transform: translateY(-2px);
+}
+
+.github-logo {
+	width: 48px;
+	height: 48px;
+}
+
+.linkedin-logo {
+	width: 48px;
+	height: 48px;
+}
+
+.contact-link.linkedin-link {
+	background-color: transparent !important;
+	padding: 10px;
+	border: none !important;
+	background: none !important;
+}
+
+.contact-link.linkedin-link:hover {
+	background-color: transparent !important;
+	background: none !important;
+	transform: scale(1.1);
+}
+
+/* Responsive design for contact section */
+@media (max-width: 768px) {
+	.contact-section {
+		padding: 60px 20px;
+	}
+
+	.contact-section h2 {
+		font-size: 2em;
+	}
+
+	.contact-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.contact-link {
+		width: 200px;
+		text-align: center;
+	}
+
+	.contact-form {
+		max-width: 100%;
+		margin: 0 auto 30px auto;
+	}
+
+	.form-group input,
+	.form-group textarea {
+		padding: 12px;
+		font-size: 14px;
+	}
+
+	.submit-btn {
+		padding: 12px 20px;
+		font-size: 14px;
+	}
+
+	.contact-info {
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+
+	.contact-info p {
+		font-size: 1em;
+	}
+}

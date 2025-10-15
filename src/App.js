@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Tooling from "./components/Tooling";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import CaseStudy from "./components/CaseStudy";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 								<Hero />
 								<Tooling />
 								<Projects />
+								<Contact />
 							</>
 						}
 					/>
