@@ -452,6 +452,28 @@ body {
 	transition: transform 0.25s ease-in-out;
 }
 
+.github-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	margin-left: 10px;
+	z-index: 50;
+}
+
+.github-button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	transform: scale(1.1);
+}
+
+.github-logo {
+	width: 24px;
+	height: 24px;
+	filter: invert(1);
+}
+
 .project-description {
 	font-size: 0.9em;
 	font-family: "MuseoModerno", sans-serif;

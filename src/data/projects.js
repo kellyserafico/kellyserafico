@@ -41,7 +41,7 @@ export const projects = [
 		],
 		image: "/images/dau.png",
 		websiteUrl: "https://designatucr.com",
-		githubUrl: "https://github.com/py1u/DAU_SWE",
+		githubUrl: "",
 		featured: true,
 	},
 	{
@@ -73,8 +73,8 @@ export const projects = [
 			"Presented the final prototype to club board members in a design showcase, competing against other teams",
 		],
 		image: "/images/bookit.png",
-		websiteUrl: "https://docs.google.com/file/d/1vLqUaOZiaNg3nd0UjH1x8B3IBNMXcpro/preview",
-		githubUrl: "",
+		websiteUrl: "https://docs.google.com/presentation/d/1YuNWQ6dNDpUO4d5ORGcQumT4OlhYMQnNH8KN2e2FWQw/edit?usp=sharing",
+		figmaUrl: "https://www.figma.com/design/JEQtNkGZ0utko5lmWYo5z7/Hi-Fi-Wireframes?node-id=0-1&t=G4cUGnkH2L640Xhj-1",
 		featured: true,
 	},
 	{
@@ -106,8 +106,8 @@ export const projects = [
 			"Won 2nd place at UCI ICSSC WebJam for innovative use of data scraping and public health impact",
 		],
 		image: "/images/dinesafe.png", // replace with actual thumbnail if available
-		websiteUrl: "", // add Devpost or demo link if you have one
-		githubUrl: "", // add repo link if available
+		websiteUrl: "https://dinesafe.vercel.app/", // add Devpost or demo link if you have one
+		githubUrl: "https://github.com/Geoffrey0953/Web-Jam-Hackathon", // add repo link if available
 		featured: true,
 	},
 	{
@@ -138,9 +138,9 @@ export const projects = [
 			"Designed an intuitive, minimal interface emphasizing mindfulness and emotional connection through daily shared reflections",
 			"Built the initial prototype within 40 hours, showcasing strong cross-functional collaboration and backend–frontend integration",
 		],
-		image: "/images/sonder.png", // replace with actual thumbnail if available
+		image: "/images/sonder.svg", // replace with actual thumbnail if available
 		websiteUrl: "", // add live demo or Devpost link if available
-		githubUrl: "", // add GitHub repo link if applicable
+		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
 		featured: true,
 	},
 	{

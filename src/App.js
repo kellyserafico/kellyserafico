@@ -6,7 +6,6 @@ import Hero from "./components/Hero";
 import Tooling from "./components/Tooling";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import CaseStudy from "./components/CaseStudy";
 
 function App() {
 	return (
@@ -25,7 +24,6 @@ function App() {
 							</>
 						}
 					/>
-					<Route path="/case-study/:projectId" element={<CaseStudy />} />
 				</Routes>
 			</div>
 		</Router>

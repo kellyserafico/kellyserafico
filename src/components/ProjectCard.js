@@ -12,7 +12,17 @@ const ProjectCard = ({ project }) => {
 	};
 
 	const handleCardClick = () => {
-		navigate(`/case-study/${project.id}`);
+		// All projects go to their website URLs
+		if (project.websiteUrl) {
+			window.open(project.websiteUrl, "_blank");
+		}
+	};
+
+	const handleGitHubClick = (e) => {
+		e.stopPropagation();
+		if (project.githubUrl) {
+			window.open(project.githubUrl, "_blank");
+		}
 	};
 
 	return (
@@ -20,6 +30,15 @@ const ProjectCard = ({ project }) => {
 			<div className="project-content">
 				<div className="header">
 					<p className="project-title">{project.title}</p>
+					{project.githubUrl && (
+						<button 
+							className="github-button" 
+							onClick={handleGitHubClick}
+							title="View on GitHub"
+						>
+							<img src="/images/github-logo.png" alt="GitHub" className="github-logo" />
+						</button>
+					)}
 				</div>
 				<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
 				<p className="project-description">
