@@ -25,20 +25,38 @@ const ProjectCard = ({ project }) => {
 		}
 	};
 
+	const handleFigmaClick = (e) => {
+		e.stopPropagation();
+		if (project.figmaUrl) {
+			window.open(project.figmaUrl, "_blank");
+		}
+	};
+
 	return (
 		<div key={project.id} className="project" id={project.id} onClick={handleCardClick}>
 			<div className="project-content">
 				<div className="header">
 					<p className="project-title">{project.title}</p>
-					{project.githubUrl && (
-						<button 
-							className="github-button" 
-							onClick={handleGitHubClick}
-							title="View on GitHub"
-						>
-							<img src="/images/github-logo.png" alt="GitHub" className="github-logo" />
-						</button>
-					)}
+					<div className="project-buttons">
+						{project.githubUrl && (
+							<button 
+								className="github-button" 
+								onClick={handleGitHubClick}
+								title="View on GitHub"
+							>
+								<img src="/images/github-logo.png" alt="GitHub" className="github-logo" />
+							</button>
+						)}
+						{project.figmaUrl && (
+							<button 
+								className="figma-button" 
+								onClick={handleFigmaClick}
+								title="View Figma Prototype"
+							>
+								<img src="/images/figma.png" alt="Figma" className="figma-logo" />
+							</button>
+						)}
+					</div>
 				</div>
 				<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
 				<p className="project-description">

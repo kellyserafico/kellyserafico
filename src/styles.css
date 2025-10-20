@@ -474,6 +474,32 @@ body {
 	filter: invert(1);
 }
 
+.project-buttons {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.figma-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	z-index: 50;
+}
+
+.figma-button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	transform: scale(1.1);
+}
+
+.figma-logo {
+	width: 24px;
+	height: 24px;
+}
+
 .project-description {
 	font-size: 0.9em;
 	font-family: "MuseoModerno", sans-serif;

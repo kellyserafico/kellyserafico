@@ -42,6 +42,7 @@ export const projects = [
 		image: "/images/dau.png",
 		websiteUrl: "https://designatucr.com",
 		githubUrl: "",
+		figmaUrl: "", // Add Figma prototype link if available
 		featured: true,
 	},
 	{
@@ -91,6 +92,7 @@ export const projects = [
 		image: "/images/lucidia.svg", // replace with actual thumbnail if available
 		websiteUrl: "https://lucidia-theta.vercel.app/",
 		githubUrl: "https://drive.google.com/file/d/1aY5xFuJ60TkGaMhgJbOdXeOgI-IfgysT/view?usp=sharing",
+		figmaUrl: "", // Add Figma prototype link if available
 		featured: true,
 	},
 	{
@@ -122,9 +124,10 @@ export const projects = [
 			"Built and deployed full-stack features with Node.js, Vite, and Vercel, including live player interactions, room codes, and voting mechanics",
 		],
 		image: "/images/minlee.png", // replace with actual thumbnail if available
-		websiteUrl: "", // add deployment or demo link if available
+		websiteUrl: "https://github.com/kellyserafico/sonder", // add deployment or demo link if available
 		githubUrl: "", // add GitHub repo if available
 		featured: true,
+		figmaUrl: "https://www.figma.com/design/ARcPNxb95hro6ZBDNv7x4g/min-lee?node-id=0-1&t=kFFdB8rFABUSO2du-1"
 	},
 	{
 		id: "sonder",
@@ -141,6 +144,7 @@ export const projects = [
 		image: "/images/sonder.svg", // replace with actual thumbnail if available
 		websiteUrl: "", // add live demo or Devpost link if available
 		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
+		figmaUrl: "", // Add Figma prototype link if available
 		featured: true,
 	},
 	{
