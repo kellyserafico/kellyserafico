@@ -124,8 +124,8 @@ export const projects = [
 			"Built and deployed full-stack features with Node.js, Vite, and Vercel, including live player interactions, room codes, and voting mechanics",
 		],
 		image: "/images/minlee.png", // replace with actual thumbnail if available
-		websiteUrl: "https://github.com/kellyserafico/sonder", // add deployment or demo link if available
-		githubUrl: "", // add GitHub repo if available
+		websiteUrl: "https://min-lee.vercel.app/", // add deployment or demo link if available
+		githubUrl: "https://github.com/GabeGibb/min-lee", // add GitHub repo if available
 		featured: true,
 		figmaUrl: "https://www.figma.com/design/ARcPNxb95hro6ZBDNv7x4g/min-lee?node-id=0-1&t=kFFdB8rFABUSO2du-1"
 	},

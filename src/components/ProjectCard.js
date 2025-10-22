@@ -37,26 +37,6 @@ const ProjectCard = ({ project }) => {
 			<div className="project-content">
 				<div className="header">
 					<p className="project-title">{project.title}</p>
-					<div className="project-buttons">
-						{project.githubUrl && (
-							<button 
-								className="github-button" 
-								onClick={handleGitHubClick}
-								title="View on GitHub"
-							>
-								<img src="/images/github-logo.png" alt="GitHub" className="github-logo" />
-							</button>
-						)}
-						{project.figmaUrl && (
-							<button 
-								className="figma-button" 
-								onClick={handleFigmaClick}
-								title="View Figma Prototype"
-							>
-								<img src="/images/figma.png" alt="Figma" className="figma-logo" />
-							</button>
-						)}
-					</div>
 				</div>
 				<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
 				<p className="project-description">
@@ -76,6 +56,28 @@ const ProjectCard = ({ project }) => {
 							</div>
 						))}
 					</div>
+					{(project.githubUrl || project.figmaUrl) && (
+						<div className="project-links">
+							{project.githubUrl && (
+								<button 
+									className="github-button" 
+									onClick={handleGitHubClick}
+									title="View on GitHub"
+								>
+									<img src="/images/github-white-icon.webp" alt="GitHub" className="github-logo" />
+								</button>
+							)}
+							{project.figmaUrl && (
+								<button 
+									className="figma-button" 
+									onClick={handleFigmaClick}
+									title="View Figma Prototype"
+								>
+									<img src="/images/figma.png" alt="Figma" className="figma-logo" />
+								</button>
+							)}
+						</div>
+					)}
 					<div className="achievements">
 						{project.achievements.map((achievement, index) => (
 							<div key={index} className="achievement">

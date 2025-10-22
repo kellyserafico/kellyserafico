@@ -469,15 +469,19 @@ body {
 }
 
 .github-logo {
-	width: 24px;
-	height: 24px;
-	filter: invert(1);
+	width: 32px;
+	height: 32px;
+	object-fit: cover;
 }
 
-.project-buttons {
+.project-links {
+	position: absolute;
+	top: 15px;
+	right: 15px;
 	display: flex;
 	gap: 8px;
 	align-items: center;
+	z-index: 10;
 }
 
 .figma-button {
@@ -497,7 +501,8 @@ body {
 
 .figma-logo {
 	width: 24px;
-	height: 24px;
+	height: auto;
+	object-fit: contain;
 }
 
 .project-description {
@@ -1713,8 +1718,9 @@ body {
 }
 
 .github-logo {
-	width: 48px;
-	height: 48px;
+	width: 32px;
+	height: auto;
+	object-fit: contain;
 }
 
 .linkedin-logo {
