@@ -34,7 +34,7 @@ export const projects = [
 		role: "Summer 2024",
 		tools: ["REACT", "NEXT.JS", "TAILWINDCSS", "FIGMA"],
 		description:
-			"Worked with the Design AT UCR club to develop their new platform-based website, aimed at enhancing visibility, retention, and accessibility to design-focused learning and opportunities at the University of California, Riverside.",
+			"Developed a new platform-based website for the Design AT UCR club to enhance visibility and accessibility to design learning opportunities at UC Riverside.",
 		achievements: [
 			"Successfully developed the website for an official university club",
 			"Held weekly meetings to mentor aspiring web developers",

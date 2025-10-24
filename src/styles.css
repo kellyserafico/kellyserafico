@@ -122,7 +122,10 @@ body {
 	font-family: "museoModerno", sans-serif;
 	width: 40%;
 	position: relative;
-	top: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
 	padding-left: 60px;
 	padding-right: 60px;
 }
@@ -327,9 +330,9 @@ body {
 	flex-wrap: nowrap;
 }
 
-.tools-r2 .tool-container {
-	margin-top: 30px;
-}
+	.tools-r2 .tool-container {
+		margin-top: 15px;
+	}
 
 .tool-container {
 	width: 10em;
@@ -513,10 +516,10 @@ body {
 
 .project-links {
 	position: absolute;
-	top: 15px;
+	top: 12px;
 	right: 15px;
 	display: flex;
-	gap: 8px;
+	gap: 0px;
 	align-items: center;
 	z-index: 10;
 }
@@ -560,8 +563,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 15px;
 }
 
 .tools {
@@ -994,8 +998,8 @@ body {
 		width: 95vw;
 		min-width: unset;
 		height: auto;
-		min-height: 400px;
-		padding: 0px 10px 10px 10px;
+		min-height: 300px;
+		padding: 0px 20px 5px 20px;
 	}
 
 	.window-text {
@@ -1004,8 +1008,8 @@ body {
 	}
 
 	.tool-container {
-		width: 7em;
-		height: 7em;
+		width: 6em;
+		height: 6em;
 	}
 
 	.tool-container img {
@@ -1025,7 +1029,7 @@ body {
 	.projects-grid {
 		grid-template-columns: 1fr;
 		grid-auto-rows: 250px;
-		gap: 30px;
+		gap: 40px;
 		padding: 0 10px;
 	}
 
@@ -1040,14 +1044,19 @@ body {
 
 	.project {
 		width: 100%;
-		height: 250px;
-		padding: 10px;
+		height: 260px;
+		padding: 20px 30px;
 		transform: none;
 	}
 
 	.project:hover {
-		height: 250px;
+		height: 260px;
 		transform: none;
+	}
+
+	.github-logo, .figma-logo {
+		width: 20px;
+		height: 20px;
 	}
 
 	.project-title {
@@ -1058,7 +1067,7 @@ body {
 	.project-description {
 		font-size: 0.75em;
 		line-height: 1.2;
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 	}
 
 	.project-image {
@@ -1067,7 +1076,8 @@ body {
 	}
 
 	.project-bottom {
-		justify-content: flex-end;
+		justify-content: flex-start;
+		gap: 15px;
 	}
 
 	.tools {
@@ -1193,7 +1203,7 @@ body {
 
 	.window-container {
 		width: 98vw;
-		padding: 0px 5px 5px 5px;
+		padding: 0px 15px 2px 15px;
 	}
 
 	.window-text {
@@ -1201,8 +1211,8 @@ body {
 	}
 
 	.tool-container {
-		width: 5em;
-		height: 5em;
+		width: 4.5em;
+		height: 4.5em;
 	}
 
 	.tool-container img {
@@ -1221,7 +1231,7 @@ body {
 	.projects-grid {
 		grid-template-columns: 1fr;
 		grid-auto-rows: 250px;
-		gap: 25px;
+		gap: 35px;
 		padding: 0 5px;
 	}
 
@@ -1236,15 +1246,15 @@ body {
 
 	.project {
 		width: 100%;
-		padding: 8px;
-		height: 250px;
+		padding: 18px 25px;
+		height: 260px;
 		overflow: hidden;
 		transform: none;
 	}
 
 	.project:hover {
-		height: 250px;
-		min-height: 250px;
+		height: 260px;
+		min-height: 260px;
 		transform: none;
 	}
 
@@ -1256,7 +1266,7 @@ body {
 	.project-description {
 		font-size: 0.7em;
 		line-height: 1.1;
-		margin-bottom: 3px;
+		margin-bottom: 6px;
 	}
 
 	.project-image {
@@ -1265,7 +1275,8 @@ body {
 	}
 
 	.project-bottom {
-		justify-content: flex-end;
+		justify-content: flex-start;
+		gap: 15px;
 	}
 
 	.tools {
@@ -1957,5 +1968,10 @@ body {
 
 	.contact-info p {
 		font-size: 1em;
+	}
+
+	.github-logo, .figma-logo {
+		width: 18px;
+		height: 18px;
 	}
 }
