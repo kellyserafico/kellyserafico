@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kellyserafico/static/css/main.ea3b0905.css",
-    "main.js": "/kellyserafico/static/js/main.3b7cd081.js",
+    "main.css": "/kellyserafico/static/css/main.9a2a979b.css",
+    "main.js": "/kellyserafico/static/js/main.8492f7c9.js",
     "static/media/FOT-RodinBokutoh Pro DB.otf": "/kellyserafico/static/media/FOT-RodinBokutoh Pro DB.e86d1e539034a3784834.otf",
     "static/media/portfolio-bg.png": "/kellyserafico/static/media/portfolio-bg.ba789ff63094e39880b2.png",
     "static/media/RoSpritendoSemiboldBeta-vmVwZ.otf": "/kellyserafico/static/media/RoSpritendoSemiboldBeta-vmVwZ.c7714066bfb699fbc0db.otf",
     "index.html": "/kellyserafico/index.html",
-    "main.ea3b0905.css.map": "/kellyserafico/static/css/main.ea3b0905.css.map",
-    "main.3b7cd081.js.map": "/kellyserafico/static/js/main.3b7cd081.js.map"
+    "main.9a2a979b.css.map": "/kellyserafico/static/css/main.9a2a979b.css.map",
+    "main.8492f7c9.js.map": "/kellyserafico/static/js/main.8492f7c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea3b0905.css",
-    "static/js/main.3b7cd081.js"
+    "static/css/main.9a2a979b.css",
+    "static/js/main.8492f7c9.js"
   ]
 }
