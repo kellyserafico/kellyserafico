@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kellyserafico/static/css/main.fa85052c.css",
+    "main.css": "/kellyserafico/static/css/main.53a89585.css",
     "main.js": "/kellyserafico/static/js/main.150cc869.js",
     "static/media/FOT-RodinBokutoh Pro DB.otf": "/kellyserafico/static/media/FOT-RodinBokutoh Pro DB.e86d1e539034a3784834.otf",
     "static/media/portfolio-bg.png": "/kellyserafico/static/media/portfolio-bg.ba789ff63094e39880b2.png",
     "static/media/RoSpritendoSemiboldBeta-vmVwZ.otf": "/kellyserafico/static/media/RoSpritendoSemiboldBeta-vmVwZ.c7714066bfb699fbc0db.otf",
     "index.html": "/kellyserafico/index.html",
-    "main.fa85052c.css.map": "/kellyserafico/static/css/main.fa85052c.css.map",
+    "main.53a89585.css.map": "/kellyserafico/static/css/main.53a89585.css.map",
     "main.150cc869.js.map": "/kellyserafico/static/js/main.150cc869.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa85052c.css",
+    "static/css/main.53a89585.css",
     "static/js/main.150cc869.js"
   ]
 }
