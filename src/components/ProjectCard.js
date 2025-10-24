@@ -38,7 +38,21 @@ const ProjectCard = ({ project }) => {
 				<div className="header">
 					<p className="project-title">{project.title}</p>
 				</div>
-				<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
+				{project.images ? (
+					<div className="project-images">
+						{project.images.map((img, index) => (
+							<img
+								key={index}
+								src={img}
+								className="project-image"
+								alt={`${project.title} ${index + 1}`}
+								onClick={handleImageClick}
+							/>
+						))}
+					</div>
+				) : (
+					<img src={project.image} className="project-image" alt={project.title} onClick={handleImageClick} />
+				)}
 				<p className="project-description">
 					{project.description.split("\n").map((line, index) => (
 						<React.Fragment key={index}>

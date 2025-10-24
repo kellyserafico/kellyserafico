@@ -141,7 +141,12 @@ export const projects = [
 			"Designed an intuitive, minimal interface emphasizing mindfulness and emotional connection through daily shared reflections",
 			"Built the initial prototype within 40 hours, showcasing strong cross-functional collaboration and backend–frontend integration",
 		],
-		image: `${process.env.PUBLIC_URL}/images/sonder.svg`, // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/sonder1.png`,
+		images: [
+			`${process.env.PUBLIC_URL}/images/sonder1.png`,
+			`${process.env.PUBLIC_URL}/images/sonder2.png`,
+			`${process.env.PUBLIC_URL}/images/sonder3.png`,
+		],
 		websiteUrl: "", // add live demo or Devpost link if available
 		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
 		figmaUrl: "", // Add Figma prototype link if available

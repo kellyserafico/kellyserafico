@@ -479,6 +479,20 @@ body {
 	z-index: 10;
 }
 
+.project:hover .project-bottom {
+	gap: 0px;
+}
+
+.project:hover .tools {
+	margin-top: 10px;
+	transition: margin-top 0.3s ease-out;
+}
+
+.project:hover .achievements {
+	margin-top: 15px;
+	transition: all 0.3s ease-in-out;
+}
+
 .project-title {
 	font-size: 1.5em;
 	font-family: "MuseoModerno", sans-serif;
@@ -611,6 +625,23 @@ body {
 	margin-bottom: 8px;
 }
 
+.project-images {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	margin-bottom: 8px;
+	overflow-x: auto;
+}
+
+.project-images .project-image {
+	height: 190px;
+	width: auto;
+	flex-shrink: 0;
+	margin-bottom: 0;
+	filter: none;
+	opacity: 1;
+}
+
 .project-content {
 	display: flex;
 	flex-direction: column;
@@ -632,6 +663,7 @@ body {
 	max-height: 300px;
 	opacity: 1;
 	overflow: hidden;
+	transition: all 0.3s ease-in-out;
 }
 
 .achievement {
@@ -1099,6 +1131,10 @@ body {
 		margin-bottom: 8px;
 	}
 
+	.project-images .project-image {
+		height: 140px;
+	}
+
 	.project-bottom {
 		justify-content: flex-start;
 		gap: 15px;
@@ -1298,6 +1334,10 @@ body {
 	.project-image {
 		height: 130px;
 		margin-bottom: 6px;
+	}
+
+	.project-images .project-image {
+		height: 130px;
 	}
 
 	.project-bottom {
