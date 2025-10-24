@@ -101,7 +101,7 @@ export const projects = [
 		role: "Fall 2024",
 		tools: ["REACT", "MONGODB", "PUPPETEER", "OPENAI API", "GOOGLE MAPS API"],
 		description:
-			"Web platform dedicated to promoting food safety and public health in Orange County by increasing transparency around restaurant hygiene standards.",
+			"Web platform promoting food safety in Orange County by increasing transparency around restaurant hygiene standards.",
 		achievements: [
 			"Developed a full-stack web platform with React and MongoDB to centralize restaurant health data in Orange County",
 			"Automated data collection and inspection report summarization using Puppeteer and the OpenAI API",

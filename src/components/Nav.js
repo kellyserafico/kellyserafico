@@ -14,7 +14,7 @@ const Nav = () => {
 	};
 
 	useEffect(() => {
-		const sections = ["about", "tooling-section", "projects"];
+		const sections = ["about", "tooling-section", "projects", "contact"];
 
 		const handleScroll = () => {
 			const scrollPosition = window.scrollY + 100;
@@ -60,7 +60,9 @@ const Nav = () => {
 				<a href="#projects" className={activeSection === "projects" ? "active" : ""} onClick={() => handleNavClick("projects")}>
 					<span>projects</span>
 				</a>
-				<a href="mailto:seraficok@gmail.com">say hi!</a>
+				<a href="#contact" className={activeSection === "contact" ? "active" : ""} onClick={() => handleNavClick("contact")}>
+					<span>say hi!</span>
+				</a>
 			</div>
 
 			{/* Mobile Hamburger Button */}
@@ -85,7 +87,9 @@ const Nav = () => {
 				<a href="#projects" className={activeSection === "projects" ? "active" : ""} onClick={() => handleNavClick("projects")}>
 					<span>projects</span>
 				</a>
-				<a href="mailto:seraficok@gmail.com">say hi!</a>
+				<a href="#contact" className={activeSection === "contact" ? "active" : ""} onClick={() => handleNavClick("contact")}>
+					<span>say hi!</span>
+				</a>
 			</div>
 		</nav>
 	);
