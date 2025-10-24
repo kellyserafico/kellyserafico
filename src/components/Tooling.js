@@ -7,14 +7,14 @@ const Tooling = () => {
 	const [showAllTools, setShowAllTools] = useState(false);
 	const sectionRef = useRef(null);
 	const tools = [
-		{ name: "Git", icon: "/images/git.svg" },
-		{ name: "HTML", icon: "/images/html.svg" },
-		{ name: "CSS", icon: "/images/css.svg" },
-		{ name: "JavaScript", icon: "/images/javascript.svg" },
-		{ name: "React", icon: "/images/react.svg" },
-		{ name: "C++", icon: "/images/cpp.svg" },
-		{ name: "Python", icon: "/images/python.svg" },
-		{ name: "Node.js", icon: "/images/nodejs.svg" },
+		{ name: "Git", icon: `${process.env.PUBLIC_URL}/images/git.svg` },
+		{ name: "HTML", icon: `${process.env.PUBLIC_URL}/images/html.svg` },
+		{ name: "CSS", icon: `${process.env.PUBLIC_URL}/images/css.svg` },
+		{ name: "JavaScript", icon: `${process.env.PUBLIC_URL}/images/javascript.svg` },
+		{ name: "React", icon: `${process.env.PUBLIC_URL}/images/react.svg` },
+		{ name: "C++", icon: `${process.env.PUBLIC_URL}/images/cpp.svg` },
+		{ name: "Python", icon: `${process.env.PUBLIC_URL}/images/python.svg` },
+		{ name: "Node.js", icon: `${process.env.PUBLIC_URL}/images/nodejs.svg` },
 	];
 
 	const fullText = "skills webdev";
@@ -37,7 +37,7 @@ const Tooling = () => {
 								setShowAllTools(true);
 								tools.forEach((tool, index) => {
 									setTimeout(() => {
-										setVisibleTools(prev => [...prev, tool.name]);
+										setVisibleTools((prev) => [...prev, tool.name]);
 									}, index * 150); // 150ms delay between each tool
 								});
 							}, 500); // Small delay after typing completes
@@ -78,9 +78,9 @@ const Tooling = () => {
 					<>
 						<div className="tools-r1">
 							{tools.slice(0, 4).map((tool, index) => (
-								<div 
-									key={tool.name} 
-									className={`tool-container ${visibleTools.includes(tool.name) ? 'tool-flip' : 'tool-hidden'}`}
+								<div
+									key={tool.name}
+									className={`tool-container ${visibleTools.includes(tool.name) ? "tool-flip" : "tool-hidden"}`}
 								>
 									<img src={tool.icon} alt={tool.name} />
 									<p>{tool.name}</p>
@@ -89,9 +89,9 @@ const Tooling = () => {
 						</div>
 						<div className="tools-r2">
 							{tools.slice(4, 8).map((tool, index) => (
-								<div 
-									key={tool.name} 
-									className={`tool-container ${visibleTools.includes(tool.name) ? 'tool-flip' : 'tool-hidden'}`}
+								<div
+									key={tool.name}
+									className={`tool-container ${visibleTools.includes(tool.name) ? "tool-flip" : "tool-hidden"}`}
 								>
 									<img src={tool.icon} alt={tool.name} />
 									<p>{tool.name}</p>

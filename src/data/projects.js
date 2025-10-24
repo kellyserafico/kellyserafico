@@ -10,7 +10,7 @@ export const projects = [
 			"Drove a project website to 410k+ views and 24k+ unique users in 3 months",
 			"Led a multifunctional team, resulting in 40% increase in user engagement",
 		],
-		image: "/images/valdle.png",
+		image: `${process.env.PUBLIC_URL}/images/valdle.png`,
 		websiteUrl: "https://valdle.gg",
 		githubUrl: "https://github.com/GabeGibb/valdle",
 		featured: true, // Featured projects appear first
@@ -23,7 +23,7 @@ export const projects = [
 		description:
 			"A secure, business-friendly, and dynamic global marketplace connecting anime, gaming, and fandom creators with passionate fans.",
 		achievements: [],
-		image: "/images/artr.png", // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/artr.png`, // replace with actual thumbnail if available
 		websiteUrl: "", // add live demo or staging link if available
 		githubUrl: "", // add repo link if appropriate
 		featured: true,
@@ -39,7 +39,7 @@ export const projects = [
 			"Successfully developed the website for an official university club",
 			"Held weekly meetings to mentor aspiring web developers",
 		],
-		image: "/images/dau.png",
+		image: `${process.env.PUBLIC_URL}/images/dau.png`,
 		websiteUrl: "https://designatucr.com",
 		githubUrl: "",
 		figmaUrl: "", // Add Figma prototype link if available
@@ -56,7 +56,7 @@ export const projects = [
 			'Submitted to LA Hacks under the "Touch Grass" category',
 			"Presented to multiple sponsors including Google, Fetch.ai, and Intel",
 		],
-		image: "/images/MemoTrail.png",
+		image: `${process.env.PUBLIC_URL}/images/MemoTrail.png`,
 		websiteUrl: "https://devpost.com/software/memotrail?ref_content=my-projects-tab&ref_feature=my_projects",
 		githubUrl: "https://github.com/GabeGibb/Notes",
 		featured: true,
@@ -73,7 +73,7 @@ export const projects = [
 			"Conducted surveys with 40+ students and usability testing to identify key pain points and prioritize features",
 			"Presented the final prototype to club board members in a design showcase, competing against other teams",
 		],
-		image: "/images/bookit.png",
+		image: `${process.env.PUBLIC_URL}/images/bookit.png`,
 		websiteUrl: "https://docs.google.com/presentation/d/1YuNWQ6dNDpUO4d5ORGcQumT4OlhYMQnNH8KN2e2FWQw/edit?usp=sharing",
 		figmaUrl: "https://www.figma.com/design/JEQtNkGZ0utko5lmWYo5z7/Hi-Fi-Wireframes?node-id=0-1&t=G4cUGnkH2L640Xhj-1",
 		featured: true,
@@ -89,7 +89,7 @@ export const projects = [
 			"Improved usability through multiple testing rounds, addressing navigation issues, color contrast, and entry flows",
 			"Presented the final prototype and demo to classmates and instructors, showcasing a complete UX research and design process",
 		],
-		image: "/images/lucidia.svg", // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/lucidia.svg`, // replace with actual thumbnail if available
 		websiteUrl: "https://lucidia-theta.vercel.app/",
 		githubUrl: "https://drive.google.com/file/d/1aY5xFuJ60TkGaMhgJbOdXeOgI-IfgysT/view?usp=sharing",
 		figmaUrl: "", // Add Figma prototype link if available
@@ -107,7 +107,7 @@ export const projects = [
 			"Automated data collection and inspection report summarization using Puppeteer and the OpenAI API",
 			"Won 2nd place at UCI ICSSC WebJam for innovative use of data scraping and public health impact",
 		],
-		image: "/images/dinesafe.png", // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/dinesafe.png`, // replace with actual thumbnail if available
 		websiteUrl: "https://dinesafe.vercel.app/", // add Devpost or demo link if you have one
 		githubUrl: "https://github.com/Geoffrey0953/Web-Jam-Hackathon", // add repo link if available
 		featured: true,
@@ -123,11 +123,11 @@ export const projects = [
 			"Designed and prototyped interactive mini-games, lobby systems, and player flows in Figma for a polished user experience",
 			"Built and deployed full-stack features with Node.js, Vite, and Vercel, including live player interactions, room codes, and voting mechanics",
 		],
-		image: "/images/minlee.png", // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/minlee.png`, // replace with actual thumbnail if available
 		websiteUrl: "https://min-lee.vercel.app/", // add deployment or demo link if available
 		githubUrl: "https://github.com/GabeGibb/min-lee", // add GitHub repo if available
 		featured: true,
-		figmaUrl: "https://www.figma.com/design/ARcPNxb95hro6ZBDNv7x4g/min-lee?node-id=0-1&t=kFFdB8rFABUSO2du-1"
+		figmaUrl: "https://www.figma.com/design/ARcPNxb95hro6ZBDNv7x4g/min-lee?node-id=0-1&t=kFFdB8rFABUSO2du-1",
 	},
 	{
 		id: "sonder",
@@ -141,7 +141,7 @@ export const projects = [
 			"Designed an intuitive, minimal interface emphasizing mindfulness and emotional connection through daily shared reflections",
 			"Built the initial prototype within 40 hours, showcasing strong cross-functional collaboration and backend–frontend integration",
 		],
-		image: "/images/sonder.svg", // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/sonder.svg`, // replace with actual thumbnail if available
 		websiteUrl: "", // add live demo or Devpost link if available
 		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
 		figmaUrl: "", // Add Figma prototype link if available
@@ -158,7 +158,7 @@ export const projects = [
 			"Implemented backend architecture with Express, TypeORM, and PostgreSQL to support scalable content management",
 			"Containerized the full application with Docker Compose and deployed services on Azure for reliable, production-ready performance",
 		],
-		image: "/images/license-link.png", // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/license-link.png`, // replace with actual thumbnail if available
 		websiteUrl: "", // add live demo or presentation link if available
 		githubUrl: "", // add repo link if appropriate
 		featured: true,

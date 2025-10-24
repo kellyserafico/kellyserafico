@@ -57,7 +57,7 @@ const Contact = () => {
 						rel="noopener noreferrer"
 						className="contact-link github-link"
 					>
-						<img src="/images/github-logo.png" alt="GitHub" className="github-logo" />
+						<img src={`${process.env.PUBLIC_URL}/images/github-logo.png`} alt="GitHub" className="github-logo" />
 					</a>
 					<a
 						href="https://www.linkedin.com/in/kelly-serafico/"
@@ -65,7 +65,7 @@ const Contact = () => {
 						rel="noopener noreferrer"
 						className="contact-link linkedin-link"
 					>
-						<img src="/images/linkedin-icon.png" alt="LinkedIn" className="linkedin-logo" />
+						<img src={`${process.env.PUBLIC_URL}/images/linkedin-icon.png`} alt="LinkedIn" className="linkedin-logo" />
 					</a>
 				</div>
 			</div>

@@ -59,21 +59,13 @@ const ProjectCard = ({ project }) => {
 					{(project.githubUrl || project.figmaUrl) && (
 						<div className="project-links">
 							{project.githubUrl && (
-								<button 
-									className="github-button" 
-									onClick={handleGitHubClick}
-									title="View on GitHub"
-								>
-									<img src="/images/github-white-icon.webp" alt="GitHub" className="github-logo" />
+								<button className="github-button" onClick={handleGitHubClick} title="View on GitHub">
+									<img src={`${process.env.PUBLIC_URL}/images/github-white-icon.webp`} alt="GitHub" className="github-logo" />
 								</button>
 							)}
 							{project.figmaUrl && (
-								<button 
-									className="figma-button" 
-									onClick={handleFigmaClick}
-									title="View Figma Prototype"
-								>
-									<img src="/images/figma.png" alt="Figma" className="figma-logo" />
+								<button className="figma-button" onClick={handleFigmaClick} title="View Figma Prototype">
+									<img src={`${process.env.PUBLIC_URL}/images/figma.png`} alt="Figma" className="figma-logo" />
 								</button>
 							)}
 						</div>
@@ -81,7 +73,7 @@ const ProjectCard = ({ project }) => {
 					<div className="achievements">
 						{project.achievements.map((achievement, index) => (
 							<div key={index} className="achievement">
-								<img src="/images/check.svg" alt="Check" />
+								<img src={`${process.env.PUBLIC_URL}/images/check.svg`} alt="Check" />
 								<p>{achievement}</p>
 							</div>
 						))}
