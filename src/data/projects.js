@@ -89,7 +89,7 @@ export const projects = [
 			"Improved usability through multiple testing rounds, addressing navigation issues, color contrast, and entry flows",
 			"Presented the final prototype and demo to classmates and instructors, showcasing a complete UX research and design process",
 		],
-		image: `${process.env.PUBLIC_URL}/images/lucidia.svg`, // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/lucidia.png`,
 		websiteUrl: "https://lucidia-theta.vercel.app/",
 		githubUrl: "https://drive.google.com/file/d/1aY5xFuJ60TkGaMhgJbOdXeOgI-IfgysT/view?usp=sharing",
 		figmaUrl: "", // Add Figma prototype link if available
@@ -141,12 +141,7 @@ export const projects = [
 			"Designed an intuitive, minimal interface emphasizing mindfulness and emotional connection through daily shared reflections",
 			"Built the initial prototype within 40 hours, showcasing strong cross-functional collaboration and backend–frontend integration",
 		],
-		image: `${process.env.PUBLIC_URL}/images/sonder1.png`,
-		images: [
-			`${process.env.PUBLIC_URL}/images/sonder1.png`,
-			`${process.env.PUBLIC_URL}/images/sonder2.png`,
-			`${process.env.PUBLIC_URL}/images/sonder3.png`,
-		],
+		image: `${process.env.PUBLIC_URL}/images/sonder.png`,
 		websiteUrl: "", // add live demo or Devpost link if available
 		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
 		figmaUrl: "", // Add Figma prototype link if available
