@@ -43,7 +43,7 @@ const Contact = () => {
 			.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
 			.then((response) => {
 				console.log("SUCCESS!", response.status, response.text);
-				showToast("Message sent successfully! I'll get back to you soon.", "success");
+				showToast("Message sent successfully!", "success");
 				// Reset form
 				setFormData({ name: "", email: "", message: "" });
 			})
