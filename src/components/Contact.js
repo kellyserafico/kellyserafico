@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { EMAILJS_CONFIG } from "../config/emailjs.js";
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -6,6 +8,14 @@ const Contact = () => {
 		email: "",
 		message: "",
 	});
+	const [toast, setToast] = useState({ show: false, message: "", type: "" });
+
+	const showToast = (message, type) => {
+		setToast({ show: true, message, type });
+		setTimeout(() => {
+			setToast({ show: false, message: "", type: "" });
+		}, 4000);
+	};
 
 	const handleChange = (e) => {
 		setFormData({
@@ -16,15 +26,36 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// Create mailto link with form data
-		const subject = `Portfolio Contact from ${formData.name}`;
-		const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-		const mailtoLink = `mailto:seraficok@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-		window.location.href = mailtoLink;
+
+		// EmailJS configuration
+		const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAILJS_CONFIG;
+
+		// Prepare template parameters
+		const templateParams = {
+			from_name: formData.name,
+			from_email: formData.email,
+			message: formData.message,
+			to_email: "seraficok@gmail.com",
+		};
+
+		// Send email using EmailJS
+		emailjs
+			.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+			.then((response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				showToast("Message sent successfully! I'll get back to you soon.", "success");
+				// Reset form
+				setFormData({ name: "", email: "", message: "" });
+			})
+			.catch((error) => {
+				console.error("FAILED...", error);
+				showToast("Failed to send message. Please try again or email me directly at seraficok@gmail.com", "error");
+			});
 	};
 
 	return (
 		<section id="contact" className="contact-section">
+			{toast.show && <div className={`toast toast-${toast.type}`}>{toast.message}</div>}
 			<div className="contact-container">
 				<h2>Let's Connect</h2>
 				<p>I'm always interested in new opportunities and collaborations.</p>
