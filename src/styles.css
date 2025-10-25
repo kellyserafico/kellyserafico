@@ -2040,13 +2040,19 @@ body {
 }
 
 .contact-link.github-link {
-	background-color: transparent;
-	padding: 10px;
-	border: none;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
 }
 
 .contact-link.github-link:hover {
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.4);
 	transform: scale(1.1);
 }
 
@@ -2063,20 +2069,25 @@ body {
 }
 
 .linkedin-logo {
-	width: 48px;
-	height: 48px;
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
 }
 
 .contact-link.linkedin-link {
-	background-color: transparent !important;
-	padding: 10px;
-	border: none !important;
-	background: none !important;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
 }
 
 .contact-link.linkedin-link:hover {
-	background-color: transparent !important;
-	background: none !important;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.4);
 	transform: scale(1.1);
 }
 
