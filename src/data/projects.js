@@ -22,7 +22,10 @@ export const projects = [
 		tools: ["REACT", "NEXT.JS", "TAILWINDCSS"],
 		description:
 			"A secure, business-friendly, and dynamic global marketplace connecting anime, gaming, and fandom creators with passionate fans.",
-		achievements: [],
+		achievements: [
+			"Built responsive React/Next.js components for an e-commerce platform",
+			"Developed cross-browser compatible responsive design solutions",
+		],
 		image: `${process.env.PUBLIC_URL}/images/artr.png`, // replace with actual thumbnail if available
 		websiteUrl: "", // add live demo or staging link if available
 		githubUrl: "", // add repo link if appropriate
