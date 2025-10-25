@@ -144,7 +144,7 @@ export const projects = [
 		image: `${process.env.PUBLIC_URL}/images/sonder.png`,
 		websiteUrl: "", // add live demo or Devpost link if available
 		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
-		figmaUrl: "", // Add Figma prototype link if available
+		figmaUrl: "https://www.figma.com/design/JUEDUQJvwe9xuX8dscWAYy/sonder?node-id=2-4&t=U1wHPwPj2XqbyhwD-1", // Add Figma prototype link if available
 		featured: true,
 	},
 	{
