@@ -12,7 +12,7 @@ export const projects = [
 		],
 		image: `${process.env.PUBLIC_URL}/images/valdle.png`,
 		websiteUrl: "https://valdle.gg",
-		githubUrl: "https://github.com/GabeGibb/valdle",
+		githubUrl: "",
 		featured: true, // Featured projects appear first
 	},
 	{
@@ -69,8 +69,7 @@ export const projects = [
 		title: "BookIt",
 		role: "Fall 2024",
 		tools: ["FIGMA", "USER RESEARCH", "PROTOTYPING", "USER TESTING"],
-		description:
-			"Mobile app designed to help UC Irvine students discover and compare study spaces on campus based on their unique preferences and productivity needs.",
+		description: "Mobile app helping UC Irvine students discover and compare study spaces on campus based on their preferences.",
 		achievements: [
 			"Collaborated with a team of 6 designers over 10 weeks to design a complete mobile app prototype from concept to presentation",
 			"Conducted surveys with 40+ students and usability testing to identify key pain points and prioritize features",
@@ -137,15 +136,14 @@ export const projects = [
 		title: "Sonder",
 		role: "Fall 2024",
 		tools: ["REACT NATIVE", "FASTAPI", "POSTGRESQL", "PYTHON", "TYPESCRIPT", "FIGMA"],
-		description:
-			"Mobile app designed to create a meaningful space for mental health reflection and connection in a fast-paced world.",
+		description: "Mobile app creating a meaningful space for mental health reflection and connection in a fast-paced world.",
 		achievements: [
 			"Developed a full-stack mobile app with React Native and FastAPI, featuring authentication, daily prompts, and real-time responses",
 			"Designed an intuitive, minimal interface emphasizing mindfulness and emotional connection through daily shared reflections",
 			"Built the initial prototype within 40 hours, showcasing strong cross-functional collaboration and backend–frontend integration",
 		],
 		image: `${process.env.PUBLIC_URL}/images/sonder.png`,
-		websiteUrl: "", // add live demo or Devpost link if available
+		websiteUrl: "https://devpost.com/software/sonder-e1bnp7", // add live demo or Devpost link if available
 		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
 		figmaUrl: "https://www.figma.com/design/JUEDUQJvwe9xuX8dscWAYy/sonder?node-id=2-4&t=U1wHPwPj2XqbyhwD-1", // Add Figma prototype link if available
 		featured: true,
@@ -154,7 +152,7 @@ export const projects = [
 		id: "license-link",
 		title: "License Link",
 		role: "Spring 2025",
-		tools: ["REACT", "MATERIAL UI", "NODE.JS", "EXPRESS", "POSTGRESQL", "TYPEDI", "TYPEORM", "AZURE", "DOCKER COMPOSE"],
+		tools: ["REACT", "MATERIAL UI", "NODE.JS", "EXPRESS", "POSTGRESQL", "TYPEORM", "AZURE", "DOCKER COMPOSE"],
 		description: "Web-based self-licensing and publishing platform for musical theatre creators and producers.",
 		achievements: [
 			"Developed frontend interfaces using React and Material UI, ensuring a polished and intuitive user experience for creators and producers",
@@ -162,7 +160,8 @@ export const projects = [
 			"Containerized the full application with Docker Compose and deployed services on Azure for reliable, production-ready performance",
 		],
 		image: `${process.env.PUBLIC_URL}/images/license-link.png`, // replace with actual thumbnail if available
-		websiteUrl: "", // add live demo or presentation link if available
+		websiteUrl:
+			"https://docs.google.com/presentation/d/1h5OJZns0V89teUQDNPERamNiIXXLXMlcNgYCYN-mN3g/edit?slide=id.g33686413aa9_0_0#slide=id.g33686413aa9_0_0", // add live demo or presentation link if available
 		githubUrl: "", // add repo link if appropriate
 		featured: true,
 	},

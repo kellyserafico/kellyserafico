@@ -45,7 +45,7 @@ body {
 	position: fixed;
 	top: 0;
 	color: white;
-	z-index: 50;
+	z-index: 100;
 }
 
 /* Hide hamburger on desktop */
@@ -422,7 +422,7 @@ body {
 .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: 450px;
+	grid-auto-rows: 520px;
 	align-items: start;
 	gap: 60px;
 	max-width: 1200px;
@@ -458,12 +458,12 @@ body {
 
 .project {
 	width: 100%;
-	height: 500px;
+	height: 520px;
 	border-style: solid;
 	border-radius: 20px;
 	border-width: 2px;
 	border-color: #818181;
-	padding: 20px;
+	padding: 20px 20px 30px 20px;
 	color: white;
 	font-family: "MuseoModerno", sans-serif;
 	display: flex;
@@ -494,7 +494,7 @@ body {
 }
 
 .project:hover .achievements {
-	margin-top: 15px;
+	margin-top: -20px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -502,16 +502,23 @@ body {
 	font-size: 1.5em;
 	font-family: "MuseoModerno", sans-serif;
 	color: white;
-	margin: 0;
-	margin-bottom: 10px;
+	margin: 10px 0;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
 }
 
-.header {
+.project-header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	position: relative;
 }
 
 .github {
@@ -547,14 +554,26 @@ body {
 	object-fit: cover;
 }
 
-.project-links {
+.github-link {
 	position: absolute;
-	top: 12px;
-	right: 15px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	display: flex;
-	gap: 0px;
 	align-items: center;
-	z-index: 10;
+	justify-content: center;
+	z-index: 2;
+}
+
+.figma-link {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
 }
 
 .figma-button {
@@ -573,7 +592,7 @@ body {
 }
 
 .figma-logo {
-	width: 24px;
+	width: 28px;
 	height: auto;
 	object-fit: contain;
 }
@@ -598,7 +617,7 @@ body {
 	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
-	gap: 15px;
+	gap: 0px;
 }
 
 .tools {
@@ -607,6 +626,7 @@ body {
 	flex-wrap: wrap;
 	gap: 8px;
 	margin-top: 20px;
+	margin-bottom: 50px;
 	justify-content: center;
 	width: 100%;
 }
@@ -656,12 +676,13 @@ body {
 }
 
 .achievements {
-	margin-top: 20px;
+	margin-top: 0px;
 	max-height: 0;
 	overflow: hidden;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
 	width: 100%;
+	min-height: 20px;
 }
 
 .project:hover .achievements {
@@ -856,8 +877,9 @@ body {
 		cursor: pointer;
 		padding: 0;
 		margin: 0;
-		z-index: 100;
+		z-index: 103;
 		align-self: center;
+		position: relative;
 	}
 
 	.hamburger-line {
@@ -869,7 +891,13 @@ body {
 	}
 
 	.hamburger-line.open:nth-child(1) {
-		transform: rotate(45deg) translate(6px, 6px);
+		transform: rotate(45deg) translate(0, 0);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -1.5px;
+		margin-left: -15px;
+		width: 30px;
 	}
 
 	.hamburger-line.open:nth-child(2) {
@@ -877,7 +905,13 @@ body {
 	}
 
 	.hamburger-line.open:nth-child(3) {
-		transform: rotate(-45deg) translate(6px, -6px);
+		transform: rotate(-45deg) translate(0, 0);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -1.5px;
+		margin-left: -15px;
+		width: 30px;
 	}
 
 	/* Mobile Navigation Menu */
@@ -886,40 +920,68 @@ body {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 60px;
+		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.95);
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 0 20px;
+		padding: 20px;
 		transform: translateY(-100%);
 		transition: transform 0.3s ease;
-		z-index: 99;
-		flex-wrap: nowrap;
+		z-index: 50;
 	}
 
 	.mobile-nav.open {
 		transform: translateY(0);
 	}
 
-	.mobile-nav a {
-		font-size: 12px;
-		margin: 0 4px;
-		padding: 6px 8px;
-		text-decoration: none;
-		color: white;
-		transition: color 0.3s ease;
-		white-space: nowrap;
-		flex-shrink: 0;
+	.mobile-nav-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		width: 100%;
+		max-width: 300px;
 	}
 
-	.mobile-nav a:hover {
+	.mobile-nav-links a {
+		font-size: 24px;
+		padding: 12px 0;
+		text-decoration: none;
+		color: white;
+		transition: all 0.3s ease;
+		text-align: center;
+		width: 100%;
+		position: relative;
+	}
+
+	.mobile-nav-links a::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 2px;
+		background-color: #e9bd98;
+		transition: width 0.3s ease;
+	}
+
+	.mobile-nav-links a:hover {
 		color: #d1d5db;
 	}
 
-	.mobile-nav a.active {
+	.mobile-nav-links a:hover::after {
+		width: 60%;
+	}
+
+	.mobile-nav-links a.active {
 		color: #e9bd98;
+	}
+
+	.mobile-nav-links a.active::after {
+		width: 60%;
 	}
 
 	/* Add padding to account for fixed navigation */
@@ -933,6 +995,8 @@ body {
 		text-align: left;
 		align-self: center;
 		line-height: 1;
+		position: relative;
+		z-index: 102;
 	}
 
 	.nav div {
@@ -1121,7 +1185,7 @@ body {
 	.project {
 		width: 100%;
 		height: 360px;
-		padding: 25px 30px;
+		padding: 25px 30px 35px 30px;
 		transform: none !important;
 		transition: none !important;
 		animation: none !important;
@@ -1147,13 +1211,18 @@ body {
 
 	.github-logo,
 	.figma-logo {
-		width: 20px;
-		height: 20px;
+		width: 22px;
+		height: 22px;
+	}
+
+	.project-header {
+		margin-bottom: 30px;
+		margin-top: 15px;
 	}
 
 	.project-title {
-		font-size: 1.3em;
-		margin-bottom: 8px;
+		font-size: 1.2em;
+		margin: 8px 0;
 	}
 
 	.project-description {
@@ -1182,7 +1251,7 @@ body {
 		flex-wrap: wrap;
 		gap: 1px;
 		margin-top: 3px;
-		margin-bottom: 12px;
+		margin-bottom: 20px;
 		justify-content: center;
 		width: 100%;
 		transform: none !important;
@@ -1376,7 +1445,7 @@ body {
 
 	.project {
 		width: 100%;
-		padding: 20px 25px;
+		padding: 20px 25px 30px 25px;
 		height: 360px;
 		overflow: hidden;
 		transform: none !important;
@@ -1434,7 +1503,7 @@ body {
 		flex-wrap: wrap;
 		gap: 1px;
 		margin-top: 2px;
-		margin-bottom: 10px;
+		margin-bottom: 18px;
 		justify-content: center;
 		width: 100%;
 		transform: none !important;
@@ -1974,14 +2043,22 @@ body {
 .contact-section {
 	background-color: #000;
 	color: white;
-	padding: 80px 20px;
+	padding: 80px 20px 40px 20px;
 	text-align: center;
 	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .contact-container {
 	max-width: 800px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
 }
 
 .contact-info {
@@ -2069,10 +2146,14 @@ body {
 }
 
 .contact-links {
-	display: flex;
+	display: flex !important;
 	justify-content: center;
+	align-items: center;
 	gap: 30px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	margin-top: auto;
+	padding-top: 40px;
+	flex-direction: row;
 }
 
 .contact-link {
@@ -2087,56 +2168,33 @@ body {
 	border: 2px solid transparent;
 }
 
-.contact-link.github-link {
-	background-color: rgba(255, 255, 255, 0.1);
-	padding: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: all 0.3s ease;
+.contact-link.github-link,
+.contact-link.linkedin-link {
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	padding: 12px !important;
+	border: 1px solid rgba(255, 255, 255, 0.2) !important;
+	border-radius: 8px !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	transition: all 0.3s ease !important;
+	width: 50px !important;
+	height: 50px !important;
+	flex-shrink: 0 !important;
 }
 
-.contact-link.github-link:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	border-color: rgba(255, 255, 255, 0.4);
-	transform: scale(1.1);
+.contact-link.github-link:hover,
+.contact-link.linkedin-link:hover {
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	border-color: rgba(255, 255, 255, 0.4) !important;
+	transform: scale(1.1) !important;
 }
 
-.contact-link:hover {
-	background-color: #555;
-	border-color: #777;
-	transform: translateY(-2px);
-}
-
-.github-logo {
-	width: 32px;
-	height: auto;
-	object-fit: contain;
-}
-
+.github-logo,
 .linkedin-logo {
 	width: 32px;
 	height: 32px;
 	object-fit: contain;
-}
-
-.contact-link.linkedin-link {
-	background-color: rgba(255, 255, 255, 0.1);
-	padding: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: all 0.3s ease;
-}
-
-.contact-link.linkedin-link:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	border-color: rgba(255, 255, 255, 0.4);
-	transform: scale(1.1);
 }
 
 /* Responsive design for contact section */

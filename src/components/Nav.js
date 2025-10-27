@@ -74,22 +74,24 @@ const Nav = () => {
 
 			{/* Mobile Navigation Menu */}
 			<div className={`mobile-nav ${isMobileMenuOpen ? "open" : ""}`}>
-				<a href="#about" className={activeSection === "about" ? "active" : ""} onClick={() => handleNavClick("about")}>
-					<span>about</span>
-				</a>
-				<a
-					href="#tooling-section"
-					className={activeSection === "tooling-section" ? "active" : ""}
-					onClick={() => handleNavClick("tooling-section")}
-				>
-					<span>tooling</span>
-				</a>
-				<a href="#projects" className={activeSection === "projects" ? "active" : ""} onClick={() => handleNavClick("projects")}>
-					<span>projects</span>
-				</a>
-				<a href="#contact" className={activeSection === "contact" ? "active" : ""} onClick={() => handleNavClick("contact")}>
-					<span>say hi!</span>
-				</a>
+				<div className="mobile-nav-links">
+					<a href="#about" className={activeSection === "about" ? "active" : ""} onClick={() => handleNavClick("about")}>
+						<span>about</span>
+					</a>
+					<a
+						href="#tooling-section"
+						className={activeSection === "tooling-section" ? "active" : ""}
+						onClick={() => handleNavClick("tooling-section")}
+					>
+						<span>tooling</span>
+					</a>
+					<a href="#projects" className={activeSection === "projects" ? "active" : ""} onClick={() => handleNavClick("projects")}>
+						<span>projects</span>
+					</a>
+					<a href="#contact" className={activeSection === "contact" ? "active" : ""} onClick={() => handleNavClick("contact")}>
+						<span>say hi!</span>
+					</a>
+				</div>
 			</div>
 		</nav>
 	);
