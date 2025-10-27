@@ -373,6 +373,12 @@ body {
 	width: 85px;
 }
 
+/* Make Figma logo wider */
+.tool-container img[alt="Figma"] {
+	width: 120px;
+	height: 85px;
+}
+
 .tool-flip {
 	animation: flipIn 0.6s ease-in-out;
 }
@@ -1144,6 +1150,12 @@ body {
 		transform: translateY(0.3em);
 	}
 
+	/* Make Figma logo appropriately sized for mobile */
+	.tool-container img[alt="Figma"] {
+		width: 60px;
+		height: 50px;
+	}
+
 	.tool-container p {
 		font-size: 12px;
 		margin-top: 0.3em;
@@ -1403,6 +1415,12 @@ body {
 		height: 35px;
 		width: 35px;
 		transform: translateY(0.3em);
+	}
+
+	/* Make Figma logo appropriately sized for small mobile */
+	.tool-container img[alt="Figma"] {
+		width: 45px;
+		height: 35px;
 	}
 
 	.tool-container p {

@@ -13,7 +13,7 @@ const Tooling = () => {
 		{ name: "JavaScript", icon: `${process.env.PUBLIC_URL}/images/javascript.svg` },
 		{ name: "React", icon: `${process.env.PUBLIC_URL}/images/react.svg` },
 		{ name: "C++", icon: `${process.env.PUBLIC_URL}/images/cpp.svg` },
-		{ name: "Python", icon: `${process.env.PUBLIC_URL}/images/python.svg` },
+		{ name: "Figma", icon: `${process.env.PUBLIC_URL}/images/figma.png` },
 		{ name: "Node.js", icon: `${process.env.PUBLIC_URL}/images/nodejs.svg` },
 	];
 
