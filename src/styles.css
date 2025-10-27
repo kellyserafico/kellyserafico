@@ -2101,6 +2101,11 @@ body {
 	transition: border-color 0.3s ease;
 }
 
+.form-group textarea {
+	resize: none;
+	min-height: 120px;
+}
+
 .form-group input:focus,
 .form-group textarea:focus {
 	outline: none;
@@ -2181,6 +2186,10 @@ body {
 	width: 50px !important;
 	height: 50px !important;
 	flex-shrink: 0 !important;
+	position: static !important;
+	top: auto !important;
+	right: auto !important;
+	transform: none !important;
 }
 
 .contact-link.github-link:hover,
@@ -2190,8 +2199,8 @@ body {
 	transform: scale(1.1) !important;
 }
 
-.github-logo,
-.linkedin-logo {
+.contact-link .github-logo,
+.contact-link .linkedin-logo {
 	width: 32px;
 	height: 32px;
 	object-fit: contain;
@@ -2228,6 +2237,10 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: static !important;
+		top: auto !important;
+		right: auto !important;
+		transform: none !important;
 	}
 
 	.contact-form {
@@ -2239,6 +2252,11 @@ body {
 	.form-group textarea {
 		padding: 12px;
 		font-size: 14px;
+	}
+
+	.form-group textarea {
+		resize: none;
+		min-height: 100px;
 	}
 
 	.submit-btn {
@@ -2255,8 +2273,8 @@ body {
 		font-size: 1em;
 	}
 
-	.github-logo,
-	.linkedin-logo {
+	.contact-link .github-logo,
+	.contact-link .linkedin-logo {
 		width: 28px;
 		height: 28px;
 	}

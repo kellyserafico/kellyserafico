@@ -13,7 +13,7 @@ export const projects = [
 		image: `${process.env.PUBLIC_URL}/images/valdle.png`,
 		websiteUrl: "https://valdle.gg",
 		githubUrl: "",
-		featured: true, // Featured projects appear first
+		featured: true, 
 	},
 	{
 		id: "artr",
@@ -26,9 +26,9 @@ export const projects = [
 			"Built responsive React/Next.js components for an e-commerce platform",
 			"Developed cross-browser compatible responsive design solutions",
 		],
-		image: `${process.env.PUBLIC_URL}/images/artr.png`, // replace with actual thumbnail if available
-		websiteUrl: "", // add live demo or staging link if available
-		githubUrl: "", // add repo link if appropriate
+		image: `${process.env.PUBLIC_URL}/images/artr.png`, 
+		websiteUrl: "", 
+		githubUrl: "", 
 		featured: true,
 	},
 	{
@@ -45,7 +45,7 @@ export const projects = [
 		image: `${process.env.PUBLIC_URL}/images/dau.png`,
 		websiteUrl: "https://designatucr.com",
 		githubUrl: "",
-		figmaUrl: "", // Add Figma prototype link if available
+		figmaUrl: "", 
 		featured: true,
 	},
 	{
@@ -94,7 +94,7 @@ export const projects = [
 		image: `${process.env.PUBLIC_URL}/images/lucidia.png`,
 		websiteUrl: "https://lucidia-theta.vercel.app/",
 		githubUrl: "https://drive.google.com/file/d/1aY5xFuJ60TkGaMhgJbOdXeOgI-IfgysT/view?usp=sharing",
-		figmaUrl: "", // Add Figma prototype link if available
+		figmaUrl: "", 
 		featured: true,
 	},
 	{
@@ -109,9 +109,9 @@ export const projects = [
 			"Automated data collection and inspection report summarization using Puppeteer and the OpenAI API",
 			"Won 2nd place at UCI ICSSC WebJam for innovative use of data scraping and public health impact",
 		],
-		image: `${process.env.PUBLIC_URL}/images/dinesafe.png`, // replace with actual thumbnail if available
-		websiteUrl: "https://dinesafe.vercel.app/", // add Devpost or demo link if you have one
-		githubUrl: "https://github.com/Geoffrey0953/Web-Jam-Hackathon", // add repo link if available
+		image: `${process.env.PUBLIC_URL}/images/dinesafe.png`, 
+		websiteUrl: "https://dinesafe.vercel.app/", 
+		githubUrl: "https://github.com/Geoffrey0953/Web-Jam-Hackathon",
 		featured: true,
 	},
 	{
@@ -125,9 +125,9 @@ export const projects = [
 			"Designed and prototyped interactive mini-games, lobby systems, and player flows in Figma for a polished user experience",
 			"Built and deployed full-stack features with Node.js, Vite, and Vercel, including live player interactions, room codes, and voting mechanics",
 		],
-		image: `${process.env.PUBLIC_URL}/images/minlee.png`, // replace with actual thumbnail if available
-		websiteUrl: "https://min-lee.vercel.app/", // add deployment or demo link if available
-		githubUrl: "https://github.com/GabeGibb/min-lee", // add GitHub repo if available
+		image: `${process.env.PUBLIC_URL}/images/minlee.png`, 
+		websiteUrl: "https://min-lee.vercel.app/", 
+		githubUrl: "https://github.com/GabeGibb/min-lee", 
 		featured: true,
 		figmaUrl: "https://www.figma.com/design/ARcPNxb95hro6ZBDNv7x4g/min-lee?node-id=0-1&t=kFFdB8rFABUSO2du-1",
 	},
@@ -143,9 +143,9 @@ export const projects = [
 			"Built the initial prototype within 40 hours, showcasing strong cross-functional collaboration and backend–frontend integration",
 		],
 		image: `${process.env.PUBLIC_URL}/images/sonder.png`,
-		websiteUrl: "https://devpost.com/software/sonder-e1bnp7", // add live demo or Devpost link if available
-		githubUrl: "https://github.com/kellyserafico/sonder", // add GitHub repo link if applicable
-		figmaUrl: "https://www.figma.com/design/JUEDUQJvwe9xuX8dscWAYy/sonder?node-id=2-4&t=U1wHPwPj2XqbyhwD-1", // Add Figma prototype link if available
+		websiteUrl: "https://devpost.com/software/sonder-e1bnp7",
+		githubUrl: "https://github.com/kellyserafico/sonder", 
+		figmaUrl: "https://www.figma.com/design/JUEDUQJvwe9xuX8dscWAYy/sonder?node-id=2-4&t=U1wHPwPj2XqbyhwD-1", 
 		featured: true,
 	},
 	{
@@ -159,10 +159,10 @@ export const projects = [
 			"Implemented backend architecture with Express, TypeORM, and PostgreSQL to support scalable content management",
 			"Containerized the full application with Docker Compose and deployed services on Azure for reliable, production-ready performance",
 		],
-		image: `${process.env.PUBLIC_URL}/images/license-link.png`, // replace with actual thumbnail if available
+		image: `${process.env.PUBLIC_URL}/images/license-link.png`, 
 		websiteUrl:
 			"https://docs.google.com/presentation/d/1h5OJZns0V89teUQDNPERamNiIXXLXMlcNgYCYN-mN3g/edit?slide=id.g33686413aa9_0_0#slide=id.g33686413aa9_0_0", // add live demo or presentation link if available
-		githubUrl: "", // add repo link if appropriate
+		githubUrl: "", 
 		featured: true,
 	},
 ];
