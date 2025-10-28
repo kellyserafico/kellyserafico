@@ -842,6 +842,30 @@ body {
 	}
 }
 
+/* Tablet-specific adjustments for tooling section */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.window-container {
+		height: auto;
+		min-height: 350px;
+		max-height: none;
+		padding-bottom: 20px;
+	}
+
+	#tooling-section {
+		padding: 20px 0;
+	}
+
+	/* Tablet-specific adjustments for project cards */
+	.project {
+		height: 580px;
+		padding: 20px 20px 70px 20px;
+	}
+
+	.projects-grid {
+		grid-auto-rows: 580px;
+	}
+}
+
 @media (max-width: 768px) {
 	.nav {
 		flex-direction: row;
@@ -2098,7 +2122,8 @@ body {
 }
 
 .contact-form {
-	max-width: 600px;
+	max-width: 800px !important;
+	width: 100%;
 	margin: 0 auto 40px auto;
 }
 
@@ -2108,7 +2133,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-	width: 100%;
+	width: 100% !important;
 	padding: 15px;
 	border: 2px solid #333;
 	border-radius: 8px;
@@ -2117,6 +2142,7 @@ body {
 	font-size: 16px;
 	font-family: inherit;
 	transition: border-color 0.3s ease;
+	box-sizing: border-box;
 }
 
 .form-group textarea {
