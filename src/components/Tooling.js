@@ -4,7 +4,6 @@ const Tooling = () => {
 	const [isVisible, setIsVisible] = useState(false);
 	const [displayText, setDisplayText] = useState("");
 	const [visibleTools, setVisibleTools] = useState([]);
-	const [showAllTools, setShowAllTools] = useState(false);
 	const sectionRef = useRef(null);
 	const tools = [
 		{ name: "Git", icon: `${process.env.PUBLIC_URL}/images/git.svg` },
@@ -34,7 +33,6 @@ const Tooling = () => {
 							clearInterval(typingInterval);
 							// Show tools one by one after typing is complete
 							setTimeout(() => {
-								setShowAllTools(true);
 								tools.forEach((tool, index) => {
 									setTimeout(() => {
 										setVisibleTools((prev) => [...prev, tool.name]);
@@ -74,32 +72,28 @@ const Tooling = () => {
 					<p>kelly@dev:~$</p>
 					<p id="type">{displayText}</p>
 				</div>
-				{showAllTools && (
-					<>
-						<div className="tools-r1">
-							{tools.slice(0, 4).map((tool, index) => (
-								<div
-									key={tool.name}
-									className={`tool-container ${visibleTools.includes(tool.name) ? "tool-flip" : "tool-hidden"}`}
-								>
-									<img src={tool.icon} alt={tool.name} />
-									<p>{tool.name}</p>
-								</div>
-							))}
+				<div className="tools-r1">
+					{tools.slice(0, 4).map((tool, index) => (
+						<div
+							key={tool.name}
+							className={`tool-container ${visibleTools.includes(tool.name) ? "tool-flip" : "tool-hidden"}`}
+						>
+							<img src={tool.icon} alt={tool.name} />
+							<p>{tool.name}</p>
 						</div>
-						<div className="tools-r2">
-							{tools.slice(4, 8).map((tool, index) => (
-								<div
-									key={tool.name}
-									className={`tool-container ${visibleTools.includes(tool.name) ? "tool-flip" : "tool-hidden"}`}
-								>
-									<img src={tool.icon} alt={tool.name} />
-									<p>{tool.name}</p>
-								</div>
-							))}
+					))}
+				</div>
+				<div className="tools-r2">
+					{tools.slice(4, 8).map((tool, index) => (
+						<div
+							key={tool.name}
+							className={`tool-container ${visibleTools.includes(tool.name) ? "tool-flip" : "tool-hidden"}`}
+						>
+							<img src={tool.icon} alt={tool.name} />
+							<p>{tool.name}</p>
 						</div>
-					</>
-				)}
+					))}
+				</div>
 			</div>
 		</section>
 	);
