@@ -24,7 +24,7 @@ export const projects = [
 			"A secure, business-friendly, and dynamic global marketplace connecting anime, gaming, and fandom creators with passionate fans.",
 		achievements: [
 			"Built responsive React/Next.js components for an e-commerce platform",
-			"Developed cross-browser compatible responsive design solutions",
+			"Created dynamic marketplace interfaces with real-time product updates",
 		],
 		image: `${process.env.PUBLIC_URL}/images/artr.png`, 
 		websiteUrl: "", 

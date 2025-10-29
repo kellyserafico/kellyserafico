@@ -7,10 +7,8 @@ const Hero = () => {
 				<section className="info-text">
 					<h3>hi, i'm kelly. nice to meet you!</h3>
 					<p>
-						I'm a frontend developer with a strong passion for building web applications that provide exceptional user
-						experiences. I am dedicated to making websites immersive, responsive, and accessible whilst bringing fresh and
-						innovative solutions to every project. I thrive in collaborative environments, so please do not hesitate to reach out!
-					</p>
+						I'm a passionate web developer based in Irvine, CA, dedicated to turning innovative ideas into functional and transformative web applications. Below are a few achievements I've made over the past few years. Please reach out if you'd like to collaborate on a project or just to chat!
+						</p>
 					<address className="email-section">
 						<img src={`${process.env.PUBLIC_URL}/images/email-icon.svg`} alt="Email" />
 						<a href="mailto:seraficok@gmail.com">seraficok@gmail.com</a>
