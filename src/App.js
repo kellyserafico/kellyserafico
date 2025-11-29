@@ -62,7 +62,7 @@ function App() {
 	}
 
 	return (
-		<Router basename="/kellyserafico">
+		<Router>
 			<div className="App">
 				<Routes>
 					<Route
