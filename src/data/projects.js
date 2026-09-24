@@ -167,7 +167,7 @@ export const projects = [
 	},
 	{
 		id: "nonograms",
-		title: "Nonograms",
+		title: "nono.gg",
 		role: "Winter 2025",
 		tools: ["REACT", "VITE", "TAILWINDCSS", "COLYSEUS", "NODE.JS", "EXPRESS"],
 		description:
