@@ -32,6 +32,23 @@ export const projects = [
 		featured: true,
 	},
 	{
+		id: "nonograms",
+		title: "nono.gg",
+		role: "Winter 2025",
+		tools: ["REACT", "VITE", "TAILWINDCSS", "COLYSEUS", "NODE.JS", "EXPRESS"],
+		description:
+			"Browser-based nonogram (picross) puzzle game with randomly generated boards and a real-time multiplayer mode.",
+		achievements: [
+			"Built a puzzle generator that creates random boards of any size and computes row and column clues automatically",
+			"Implemented click-and-drag filling, right-click cross-outs, a solve timer, and instant win detection in React",
+			"Developed a Colyseus and Express game server with room-based lobbies so players can join and play together in real time",
+		],
+		image: `${process.env.PUBLIC_URL}/images/nonograms.webp`,
+		websiteUrl: "https://nono.gg",
+		githubUrl: "https://github.com/kellyserafico/nonograms",
+		featured: true,
+	},
+	{
 		id: "dau",
 		title: "Design@UCR",
 		role: "Summer 2024",
@@ -163,23 +180,6 @@ export const projects = [
 		websiteUrl:
 			"https://docs.google.com/presentation/d/1h5OJZns0V89teUQDNPERamNiIXXLXMlcNgYCYN-mN3g/edit?slide=id.g33686413aa9_0_0#slide=id.g33686413aa9_0_0", // add live demo or presentation link if available
 		githubUrl: "",
-		featured: true,
-	},
-	{
-		id: "nonograms",
-		title: "nono.gg",
-		role: "Winter 2025",
-		tools: ["REACT", "VITE", "TAILWINDCSS", "COLYSEUS", "NODE.JS", "EXPRESS"],
-		description:
-			"Browser-based nonogram (picross) puzzle game with randomly generated boards and a real-time multiplayer mode.",
-		achievements: [
-			"Built a puzzle generator that creates random boards of any size and computes row and column clues automatically",
-			"Implemented click-and-drag filling, right-click cross-outs, a solve timer, and instant win detection in React",
-			"Developed a Colyseus and Express game server with room-based lobbies so players can join and play together in real time",
-		],
-		image: `${process.env.PUBLIC_URL}/images/nonograms.webp`,
-		websiteUrl: "https://nono.gg",
-		githubUrl: "https://github.com/kellyserafico/nonograms",
 		featured: true,
 	},
 ];
