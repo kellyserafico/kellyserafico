@@ -165,4 +165,21 @@ export const projects = [
 		githubUrl: "",
 		featured: true,
 	},
+	{
+		id: "nonograms",
+		title: "Nonograms",
+		role: "Winter 2025",
+		tools: ["REACT", "VITE", "TAILWINDCSS", "COLYSEUS", "NODE.JS", "EXPRESS"],
+		description:
+			"Browser-based nonogram (picross) puzzle game with randomly generated boards and a real-time multiplayer mode.",
+		achievements: [
+			"Built a puzzle generator that creates random boards of any size and computes row and column clues automatically",
+			"Implemented click-and-drag filling, right-click cross-outs, a solve timer, and instant win detection in React",
+			"Developed a Colyseus and Express game server with room-based lobbies so players can join and play together in real time",
+		],
+		image: `${process.env.PUBLIC_URL}/images/nonograms.webp`,
+		websiteUrl: "https://nono.gg",
+		githubUrl: "https://github.com/kellyserafico/nonograms",
+		featured: true,
+	},
 ];

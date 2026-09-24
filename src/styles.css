@@ -920,6 +920,16 @@ body {
 	color: #1f2937;
 }
 
+#nonograms .role {
+	color: #bef264;
+}
+
+#nonograms .tool,
+#nonograms .achievement {
+	background-color: #bef264;
+	color: #1f2937;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
 	.moon {
